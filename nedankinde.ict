@@ -804,7 +804,7 @@ types:
           ct.room.lives --;
           if (ct.room.lives <= 0) {
               this.kill = true;
-                  setTimeout(function() {
+                  window.setTimeout(function() {
                   ct.rooms.switch('Main');
               }, 1000);
           }
@@ -812,7 +812,9 @@ types:
 
       var recover = ct.place.occupied(this, this.x, this.y, 'Recover');
       if (recover) {
-          ct.room.lives ++;
+          recover.kill = true;
+          if (ct.room.lives < 3) {
+              ct.room.lives ++;
           }
       }
     ondraw: ''
@@ -820,7 +822,7 @@ types:
     texture: 9a9fbd9c-e346-4bd0-97ce-08c623b39e8e
     extends: {}
     uid: e3f48b26-f02c-4e86-be89-a76093cb1867
-    lastmod: 1619900824174
+    lastmod: 1619903679140
   - name: naoSou
     depth: 0
     oncreate: |-
@@ -851,13 +853,16 @@ types:
     texture: 3ccbb6b0-1049-48a3-bb39-921a270d9217
     extends: {}
     uid: 802ab2b0-e829-4883-87d5-7834368c83c5
-    lastmod: 1619898189604
+    lastmod: 1619902092786
   - name: campbells
     depth: 0
     oncreate: |-
       this.speed = 3;
       this.direction = 270;
       this.ctype = 'Recover';
+
+      this.scale.x = 0.3;
+      this.scale.y = 0.3;
     onstep: |
       this.move();
     ondraw: ''
@@ -865,7 +870,7 @@ types:
     texture: 0e12d6e2-1a87-4890-9334-75c0a74ca011
     extends: {}
     uid: a26e69f4-f33a-4cc9-b567-94cc2e4cf45a
-    lastmod: 1619900616125
+    lastmod: 1619904155862
   - name: meteor_ao
     depth: 0
     oncreate: |-
@@ -891,7 +896,7 @@ types:
     texture: da1180b8-0eb6-46ee-8391-69af5e27081e
     extends: {}
     uid: 6ee12b9d-416d-43f7-8b69-6c9cfe994bc2
-    lastmod: 1619898178443
+    lastmod: 1619902056330
   - name: meteor_ao2
     depth: 0
     oncreate: |
@@ -916,7 +921,7 @@ types:
     texture: eaf087f2-e4f1-4fac-b95f-bb7ca94a0e01
     extends: {}
     uid: 09e13a7c-c3e1-45ed-9e07-f1831a174e6e
-    lastmod: 1619898181218
+    lastmod: 1619901857450
   - name: laser_az
     depth: 0
     oncreate: |-
@@ -934,7 +939,7 @@ types:
     texture: 043c2f37-b00b-4142-9cf3-1464108ef47d
     extends: {}
     uid: 1eb8a988-17e6-4c64-af55-48251a11066a
-    lastmod: 1619888769372
+    lastmod: 1619902041130
   - name: laser_vm
     depth: 0
     oncreate: |-
@@ -953,7 +958,7 @@ types:
     texture: e6aef562-0ea6-48e7-a2c4-330e049dd4a3
     extends: {}
     uid: 5925847c-0cc6-437f-9d78-44362024e4e8
-    lastmod: 1619887290984
+    lastmod: 1619903628188
   - name: padrao
     depth: 0
     oncreate: ''
@@ -1017,7 +1022,7 @@ types:
     texture: d4858864-d281-4995-b4d9-9625c1dba120
     extends: {}
     uid: c4b972ef-d6c6-4907-afc5-1f1d31036700
-    lastmod: 1619900604536
+    lastmod: 1619901967011
   - name: laser_am
     depth: 0
     oncreate: |-
@@ -1038,7 +1043,7 @@ types:
     texture: 142d21c7-b76b-4232-bade-8892ebb33db1
     extends: {}
     uid: ad9c0499-3489-44be-8783-497efe8929fa
-    lastmod: 1619898196533
+    lastmod: 1619902029994
   - name: alguem_fundo
     depth: 0
     oncreate: ''
@@ -1048,7 +1053,7 @@ types:
     texture: 5db74e9f-2486-46a1-9931-c712cf458754
     extends: {}
     uid: 2e1d69f1-5583-460b-a7e2-3b068bc2927a
-    lastmod: 1619899563784
+    lastmod: 1619901973122
   - name: bg
     depth: 0
     oncreate: ''
@@ -1058,7 +1063,7 @@ types:
     texture: 97a08841-ded9-4538-96c5-dc580412a4bd
     extends: {}
     uid: f3a35032-60e7-477f-bd90-289ca5eb69bf
-    lastmod: 1619899730380
+    lastmod: 1619901979266
   - name: bumerangue
     depth: 0
     oncreate: ''
@@ -1068,7 +1073,7 @@ types:
     texture: 84e6c912-b61b-4fb2-9b15-4d064d5e548b
     extends: {}
     uid: fe626a25-ca2b-41b8-94a7-cb214d224b39
-    lastmod: 1619899885316
+    lastmod: 1619901985418
 sounds: []
 styles:
   - name: ScoreText
@@ -1087,6 +1092,11 @@ styles:
 rooms:
   - name: Main
     oncreate: >-
+      var placar = ct.rooms.list[1];
+
+      ct.rooms.append('Placar');
+
+
       this.asteroidTimer = 20;
 
       this.enemyTimer = 180;
@@ -1136,7 +1146,7 @@ rooms:
       }
 
       this.itemTimer -= ct.delta;
-      if (this.itemTimer <= 0 && this.lives = 3) {
+      if (this.itemTimer <= 0 && this.lives == 3) {
           this.itemTimer = ct.random.range(180, 400);
           ct.types.copy('campbells', ct.random(540), -100);
       }
@@ -1147,70 +1157,10 @@ rooms:
     width: 800
     height: 600
     backgrounds:
-      - depth: 0
+      - depth: -10
         texture: 97a08841-ded9-4538-96c5-dc580412a4bd
         extends: {}
     copies:
-      - x: -64
-        'y': 0
-        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
-        exts: {}
-      - x: 576
-        'y': 0
-        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
-        exts: {}
-      - x: 704
-        'y': 0
-        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
-        exts: {}
-      - x: -64
-        'y': 128
-        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
-        exts: {}
-      - x: 576
-        'y': 128
-        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
-        exts: {}
-      - x: 704
-        'y': 128
-        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
-        exts: {}
-      - x: -64
-        'y': 256
-        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
-        exts: {}
-      - x: 576
-        'y': 256
-        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
-        exts: {}
-      - x: 704
-        'y': 256
-        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
-        exts: {}
-      - x: -64
-        'y': 384
-        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
-        exts: {}
-      - x: 576
-        'y': 384
-        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
-        exts: {}
-      - x: 704
-        'y': 384
-        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
-        exts: {}
-      - x: -64
-        'y': 512
-        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
-        exts: {}
-      - x: 576
-        'y': 512
-        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
-        exts: {}
-      - x: 704
-        'y': 512
-        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
-        exts: {}
       - x: 384
         'y': 512
         uid: e3f48b26-f02c-4e86-be89-a76093cb1867
@@ -1224,7 +1174,118 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1619899736510
+    lastmod: 1619904436351
+  - name: Placar
+    oncreate: >-
+      this.score = 0;
+
+      this.lives = 3;
+
+
+      this.scoreLabel = new PIXI.Text('Score: ' + this.score);
+
+      this.scoreLabel = new PIXI.Text('Score: ' + this.score,
+      ct.styles.get('ScoreText'));
+
+      this.addChild(this.scoreLabel);
+
+      this.scoreLabel.x = 580;
+
+      this.scoreLabel.y = 30;
+
+      this.scoreLabel.depth = 1000;
+
+
+      this.livesLabel = new PIXI.Text('Lives: ' + this.lives,
+      ct.styles.get('ScoreText'));
+
+      this.addChild(this.livesLabel);
+
+      this.livesLabel.x = 580;
+
+      this.livesLabel.y = 60;
+
+      this.livesLabel.depth = 1000;
+    onstep: ''
+    ondraw: |-
+      this.scoreLabel.text = 'Score: ' + this.score;
+      this.livesLabel.text = 'Lives: ' + this.lives;
+    onleave: ''
+    width: 800
+    height: 600
+    backgrounds: []
+    copies:
+      - x: -64
+        'y': 0
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: -64
+        'y': 128
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: -64
+        'y': 256
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: -64
+        'y': 384
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: -64
+        'y': 512
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 576
+        'y': 512
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 704
+        'y': 512
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 704
+        'y': 384
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 576
+        'y': 384
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 576
+        'y': 256
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 704
+        'y': 256
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 704
+        'y': 128
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 576
+        'y': 128
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 576
+        'y': -0.0
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 704
+        'y': -0.0
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+    tiles:
+      - depth: -10
+        tiles: []
+        extends: {}
+    uid: 2b4bf2f0-cc09-45c4-9160-fd7cb10ec677
+    thumbnail: fd7cb10ec677
+    extends:
+      isUi: true
+    gridX: 64
+    gridY: 64
+    lastmod: 1619904443749
 actions:
   - name: MoveX
     methods:
@@ -1268,7 +1329,7 @@ settings:
     functionWrap: false
     codeModifier: none
   branding:
-    icon: -1
+    icon: 0e12d6e2-1a87-4890-9334-75c0a74ca011
     accent: '#446adb'
     invertPreloaderScheme: true
   fps: 30
