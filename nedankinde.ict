@@ -1,0 +1,673 @@
+ctjsVersion: 1.7.0
+notes: /* empty */
+libs:
+  place:
+    gridX: 1024
+    gridY: 1024
+  fittoscreen:
+    mode: scaleFit
+  mouse: {}
+  keyboard.polyfill: {}
+  sound.howler: {}
+  keyboard: {}
+  random: {}
+textures:
+  - name: naoSou
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 62
+      - 61
+    marginx: 0
+    marginy: 0
+    imgWidth: 128
+    imgHeight: 128
+    width: 128
+    height: 128
+    offx: 0
+    offy: 0
+    origname: i3ccbb6b0-1049-48a3-bb39-921a270d9217.png
+    shape: strip
+    left: 0
+    right: 128
+    top: 0
+    bottom: 128
+    uid: 3ccbb6b0-1049-48a3-bb39-921a270d9217
+    padding: 1
+    source: >-
+      C:\Users\flaud\OneDrive\Área de Trabalho\Paint
+      Jam\nedankinde\img\naoSou.png
+    r: 64
+    stripPoints:
+      - x: 0
+        'y': -64
+      - x: 13
+        'y': -44
+      - x: 21
+        'y': -14
+      - x: 19
+        'y': 8
+      - x: 39
+        'y': 14
+      - x: 20
+        'y': 30
+      - x: 14
+        'y': 62
+      - x: -16
+        'y': 58
+      - x: -17
+        'y': 31
+      - x: -40
+        'y': 18
+      - x: -17
+        'y': 11
+      - x: -21
+        'y': -46
+    closedStrip: true
+    lastmod: 1619826460680
+  - name: tesouras
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 60
+      - 62
+    marginx: 0
+    marginy: 0
+    imgWidth: 128
+    imgHeight: 128
+    width: 128
+    height: 128
+    offx: 0
+    offy: 0
+    origname: i9a9fbd9c-e346-4bd0-97ce-08c623b39e8e.png
+    shape: strip
+    left: 60
+    right: 68
+    top: 63
+    bottom: 65
+    uid: 9a9fbd9c-e346-4bd0-97ce-08c623b39e8e
+    padding: 1
+    source: >-
+      C:\Users\flaud\OneDrive\Área de Trabalho\Paint
+      Jam\nedankinde\img\tesouras.png
+    r: 64
+    stripPoints:
+      - x: -3
+        'y': -43
+      - x: 25
+        'y': 2
+      - x: 17
+        'y': 48
+      - x: -12
+        'y': 49
+      - x: -27
+        'y': -3
+    closedStrip: true
+    lastmod: 1619832036560
+  - name: campbells
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 63
+      - 137
+    marginx: 0
+    marginy: 0
+    imgWidth: 128
+    imgHeight: 256
+    width: 128
+    height: 256
+    offx: 0
+    offy: 0
+    origname: i0e12d6e2-1a87-4890-9334-75c0a74ca011.png
+    shape: strip
+    left: 60
+    right: 68
+    top: 117
+    bottom: 139
+    uid: 0e12d6e2-1a87-4890-9334-75c0a74ca011
+    padding: 1
+    source: >-
+      C:\Users\flaud\OneDrive\Área de Trabalho\Paint
+      Jam\nedankinde\img\campbells.png
+    stripPoints:
+      - x: -5
+        'y': -84
+      - x: 49
+        'y': -74
+      - x: 50
+        'y': -33
+      - x: 50
+        'y': 78
+      - x: -1
+        'y': 89
+      - x: -50
+        'y': 80
+      - x: -51
+        'y': -8
+      - x: -50
+        'y': -77
+    closedStrip: true
+    r: 64
+    lastmod: 1619826491692
+  - name: laser_az
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 34
+      - 30
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: i043c2f37-b00b-4142-9cf3-1464108ef47d.png
+    shape: circle
+    left: 34
+    right: 30
+    top: 30
+    bottom: 34
+    uid: 043c2f37-b00b-4142-9cf3-1464108ef47d
+    padding: 1
+    source: >-
+      C:\Users\flaud\OneDrive\Área de Trabalho\Paint
+      Jam\nedankinde\img\laser_az.png
+    stripPoints:
+      - x: -28
+        'y': -65
+      - x: 21
+        'y': -33
+      - x: 18
+        'y': -62
+      - x: 75
+        'y': 79
+      - x: -34
+        'y': 53
+      - x: -68
+        'y': 90
+      - x: 10
+        'y': 107
+      - x: 56
+        'y': -17
+      - x: 59
+        'y': 17
+      - x: -62
+        'y': -8
+    closedStrip: true
+    r: 32
+    lastmod: 1619832514705
+  - name: meteor_ao
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 64
+      - 64
+    marginx: 0
+    marginy: 0
+    imgWidth: 128
+    imgHeight: 128
+    width: 128
+    height: 128
+    offx: 0
+    offy: 0
+    origname: ida1180b8-0eb6-46ee-8391-69af5e27081e.png
+    shape: strip
+    left: 0
+    right: 128
+    top: 0
+    bottom: 128
+    uid: da1180b8-0eb6-46ee-8391-69af5e27081e
+    padding: 1
+    source: >-
+      C:\Users\flaud\OneDrive\Área de Trabalho\Paint
+      Jam\nedankinde\img\meteor_ao.png
+    stripPoints:
+      - x: -1
+        'y': -44
+      - x: 24
+        'y': -42
+      - x: 40
+        'y': -36
+      - x: 56
+        'y': -20
+      - x: 59
+        'y': 12
+      - x: 39
+        'y': 39
+      - x: 6
+        'y': 46
+      - x: -29
+        'y': 46
+      - x: -51
+        'y': 36
+      - x: -56
+        'y': 3
+      - x: -49
+        'y': -21
+      - x: -35
+        'y': -40
+    closedStrip: true
+    lastmod: 1619832685732
+  - name: laser_vm
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 32
+      - 29
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: ie6aef562-0ea6-48e7-a2c4-330e049dd4a3.png
+    shape: circle
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: e6aef562-0ea6-48e7-a2c4-330e049dd4a3
+    padding: 1
+    source: >-
+      C:\Users\flaud\OneDrive\Área de Trabalho\Paint
+      Jam\nedankinde\img\laser_vm.png
+    r: 32
+    lastmod: 1619826314746
+  - name: meteor_ao2
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 61
+      - 70
+    marginx: 0
+    marginy: 0
+    imgWidth: 128
+    imgHeight: 128
+    width: 128
+    height: 128
+    offx: 0
+    offy: 0
+    origname: ieaf087f2-e4f1-4fac-b95f-bb7ca94a0e01.png
+    shape: strip
+    left: 0
+    right: 128
+    top: 0
+    bottom: 128
+    uid: eaf087f2-e4f1-4fac-b95f-bb7ca94a0e01
+    padding: 1
+    source: >-
+      C:\Users\flaud\OneDrive\Área de Trabalho\Paint
+      Jam\nedankinde\img\meteor_ao2.png
+    stripPoints:
+      - x: -1
+        'y': -58
+      - x: 34
+        'y': -49
+      - x: 61
+        'y': -20
+      - x: 63
+        'y': 14
+      - x: 31
+        'y': 39
+      - x: -37
+        'y': 48
+      - x: -51
+        'y': 37
+      - x: -54
+        'y': -16
+      - x: -39
+        'y': -45
+    closedStrip: true
+    lastmod: 1619826418804
+  - name: padrao
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 128
+    imgHeight: 128
+    width: 128
+    height: 128
+    offx: 0
+    offy: 0
+    origname: ib5cade25-c9e2-4d2c-9820-a5f4ba3cfebd.png
+    shape: rect
+    left: 0
+    right: 128
+    top: 0
+    bottom: 128
+    uid: b5cade25-c9e2-4d2c-9820-a5f4ba3cfebd
+    padding: 1
+    source: >-
+      C:\Users\flaud\OneDrive\Área de Trabalho\Paint
+      Jam\nedankinde\img\padrao.png
+    lastmod: 1619833292027
+skeletons: []
+types:
+  - name: tesouras
+    depth: 0
+    oncreate: ''
+    onstep: |-
+      /**
+       * Move the ship
+       * See Project > Actions and input methods panel
+       * and "Actions" in the docs.
+       */
+
+      this.x += 8 * ct.delta * ct.actions.MoveX.value; // Move by X axis
+      this.y += 8 * ct.delta * ct.actions.MoveY.value; 
+
+      /**
+       * Check whether the ship fell off the viewport
+       */
+      if (this.x < 108) { // Have the ship crossed the left border?
+          this.x = 108; // Go back to the left border
+      }
+      if (this.x > 540) { // Have the ship crossed the right border?
+          this.x = 540; // Go back to the right border
+      }
+      if (this.y < 0) { // Have the ship crossed the left border?
+          this.y = 0; // Go back to the left border
+      }
+      if (this.y > 550) { // Have the ship crossed the right border?
+          this.y = 550; // Go back to the right border
+      }
+      if (ct.actions.Shoot.pressed) {
+          ct.types.copy('laser_az', this.x, this.y);
+      }
+      this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 9a9fbd9c-e346-4bd0-97ce-08c623b39e8e
+    extends: {}
+    uid: e3f48b26-f02c-4e86-be89-a76093cb1867
+    lastmod: 1619835155334
+  - name: naoSou
+    depth: 0
+    oncreate: |-
+      this.speed = 3;
+      this.direction = 270;
+    onstep: |-
+      this.move();
+
+      if (this.y > ct.viewHeight + 80) {
+          this.kill = true;
+      }
+
+      var collided = ct.place.meet(this, this.x, this.y, 'laser_az');
+      if (collided) {
+          collided.kill = true;
+          this.kill = true;
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: 3ccbb6b0-1049-48a3-bb39-921a270d9217
+    extends: {}
+    uid: 802ab2b0-e829-4883-87d5-7834368c83c5
+    lastmod: 1619834699425
+  - name: campbells
+    depth: 0
+    oncreate: ''
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 0e12d6e2-1a87-4890-9334-75c0a74ca011
+    extends: {}
+    uid: a26e69f4-f33a-4cc9-b567-94cc2e4cf45a
+    lastmod: 1619826657192
+  - name: meteor_ao
+    depth: 0
+    oncreate: |+
+      this.speed = ct.random.range(1, 3);
+      this.direction = ct.random.range(270 - 30, 270 + 30);
+
+    onstep: |-
+      this.move();
+
+      if (this.y > ct.viewHeight + 80) {
+          this.kill = true;
+      }
+
+      var collided = ct.place.meet(this, this.x, this.y, 'laser_az');
+      if (collided) {
+          collided.kill = true;
+          this.kill = true;
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: da1180b8-0eb6-46ee-8391-69af5e27081e
+    extends: {}
+    uid: 6ee12b9d-416d-43f7-8b69-6c9cfe994bc2
+    lastmod: 1619834660004
+  - name: meteor_ao2
+    depth: 0
+    oncreate: |+
+      this.speed = ct.random.range(1, 3);
+      this.direction = ct.random.range(270 - 30, 270 + 30);
+
+    onstep: |-
+      this.move();
+
+      if (this.y > ct.viewHeight + 80) {
+          this.kill = true;
+      }
+
+      var collided = ct.place.meet(this, this.x, this.y, 'laser_az');
+      if (collided) {
+          collided.kill = true;
+          this.kill = true;
+      }
+    ondraw: ''
+    ondestroy: ''
+    texture: eaf087f2-e4f1-4fac-b95f-bb7ca94a0e01
+    extends: {}
+    uid: 09e13a7c-c3e1-45ed-9e07-f1831a174e6e
+    lastmod: 1619832713683
+  - name: laser_az
+    depth: 0
+    oncreate: |-
+      this.speed = 18;
+      this.direction = 90;
+    onstep: |+
+      if (this.y < -40) {
+          this.kill = true;
+      }
+
+      this.move();
+
+    ondraw: ''
+    ondestroy: ''
+    texture: 043c2f37-b00b-4142-9cf3-1464108ef47d
+    extends: {}
+    uid: 1eb8a988-17e6-4c64-af55-48251a11066a
+    lastmod: 1619832314038
+  - name: laser_vm
+    depth: 0
+    oncreate: ''
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: e6aef562-0ea6-48e7-a2c4-330e049dd4a3
+    extends: {}
+    uid: 5925847c-0cc6-437f-9d78-44362024e4e8
+    lastmod: 1619826675283
+  - name: padrao
+    depth: 0
+    oncreate: ''
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: b5cade25-c9e2-4d2c-9820-a5f4ba3cfebd
+    extends: {}
+    uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+    lastmod: 1619835171131
+sounds: []
+styles: []
+rooms:
+  - name: Room_65590b90f254
+    oncreate: ''
+    onstep: ''
+    ondraw: ''
+    onleave: ''
+    width: 800
+    height: 600
+    backgrounds: []
+    copies:
+      - x: -64
+        'y': 0
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 576
+        'y': 0
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 704
+        'y': 0
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 512
+        'y': 64
+        uid: 09e13a7c-c3e1-45ed-9e07-f1831a174e6e
+        exts: {}
+      - x: -64
+        'y': 128
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 576
+        'y': 128
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 704
+        'y': 128
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 192
+        'y': 192
+        uid: 6ee12b9d-416d-43f7-8b69-6c9cfe994bc2
+        exts: {}
+      - x: -64
+        'y': 256
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 576
+        'y': 256
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 704
+        'y': 256
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: -64
+        'y': 384
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 576
+        'y': 384
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 704
+        'y': 384
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: -64
+        'y': 512
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 384
+        'y': 512
+        uid: e3f48b26-f02c-4e86-be89-a76093cb1867
+        exts: {}
+      - x: 320
+        'y': 64
+        uid: 802ab2b0-e829-4883-87d5-7834368c83c5
+        exts: {}
+      - x: 576
+        'y': 512
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+      - x: 704
+        'y': 512
+        uid: f1ed51bb-9bc9-453d-a452-29ee7e94caf3
+        exts: {}
+    tiles:
+      - depth: -10
+        tiles: []
+        extends: {}
+    uid: a8c0d145-ed80-49e2-827a-65590b90f254
+    thumbnail: 65590b90f254
+    extends: {}
+    gridX: 64
+    gridY: 64
+actions:
+  - name: MoveX
+    methods:
+      - code: keyboard.ArrowLeft
+        multiplier: -1
+      - code: keyboard.ArrowRight
+        multiplier: 1
+  - name: MoveY
+    methods:
+      - code: keyboard.ArrowUp
+        multiplier: -1
+      - code: keyboard.ArrowDown
+        multiplier: 1
+  - name: Shoot
+    methods:
+      - code: keyboard.KeyZ
+      - code: keyboard.KeyJ
+emitterTandems: []
+scripts: []
+starting: 0
+settings:
+  authoring:
+    author: ''
+    site: ''
+    title: ''
+    version:
+      - 0
+      - 0
+      - 1
+    versionPostfix: ''
+  rendering:
+    usePixiLegacy: true
+    maxFPS: 60
+    pixelatedrender: false
+    highDensity: true
+    desktopMode: maximized
+  export:
+    windows: true
+    linux: true
+    mac: true
+    functionWrap: false
+    codeModifier: none
+  branding:
+    icon: -1
+    accent: '#446adb'
+    invertPreloaderScheme: true
+  fps: 30
+fonts: []
+palette: []
+styletick: .nan
