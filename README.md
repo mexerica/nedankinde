@@ -1,3 +1,3 @@
 # nedankinde 🎠
 
-Tiago N friends
+Tiago N friend's
