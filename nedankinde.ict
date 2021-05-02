@@ -706,35 +706,6 @@ textures:
     source: >-
       C:\Users\flaud\OneDrive\Área de Trabalho\Paint
       Jam\nedankinde\img\kannyvete.png
-  - name: alguem_fundo
-    untill: 0
-    grid:
-      - 1
-      - 1
-    axis:
-      - 0
-      - 0
-    marginx: 0
-    marginy: 0
-    imgWidth: 1024
-    imgHeight: 576
-    width: 1024
-    height: 576
-    offx: 0
-    offy: 0
-    origname: i5db74e9f-2486-46a1-9931-c712cf458754.png
-    shape: rect
-    left: 0
-    right: 1024
-    top: 0
-    bottom: 576
-    uid: 5db74e9f-2486-46a1-9931-c712cf458754
-    padding: 1
-    source: >-
-      C:\Users\flaud\OneDrive\Área de Trabalho\Paint
-      Jam\nedankinde\img\alguem_fundo.png
-    lastmod: 1619899533130
-    tiled: true
   - name: bg
     untill: 0
     grid:
@@ -761,6 +732,57 @@ textures:
     padding: 1
     source: 'C:\Users\flaud\OneDrive\Área de Trabalho\Paint Jam\nedankinde\img\bg.png'
     tiled: true
+  - name: start
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 128
+    imgHeight: 32
+    width: 128
+    height: 32
+    offx: 0
+    offy: 0
+    origname: i5a6807fa-c457-456e-82c7-060a76b1d865.png
+    shape: rect
+    left: 0
+    right: 128
+    top: 0
+    bottom: 32
+    uid: 5a6807fa-c457-456e-82c7-060a76b1d865
+    padding: 1
+    source: 'C:\Users\Ricardo\Desktop\nedankinde\nedankinde\artes\start.png'
+    lastmod: 1619960367776
+  - name: alguem
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 0
+      - 0
+    marginx: 0
+    marginy: 0
+    imgWidth: 814
+    imgHeight: 613
+    width: 814
+    height: 613
+    offx: 0
+    offy: 0
+    origname: if226aecc-1c8b-44e2-9cc3-f63f5d972162.png
+    shape: rect
+    left: 0
+    right: 814
+    top: 0
+    bottom: 613
+    uid: f226aecc-1c8b-44e2-9cc3-f63f5d972162
+    padding: 1
+    source: 'C:\Users\Ricardo\Desktop\alguem.png'
 skeletons: []
 types:
   - name: tesouras
@@ -768,6 +790,8 @@ types:
     oncreate: |
       this.scale.x = 0.7;
       this.scale.y = 0.7;
+
+      this.timerTiro = new CtTimer(1000, 'veloTiro');
     onstep: |-
       /**
        * Move the ship
@@ -794,8 +818,17 @@ types:
           this.y = 550; // Go back to the right border
       }
 
+      if (this.timerTiro.time >= 250)
+          this.timerTiro.time = 0;
+
       if (ct.actions.Shoot.pressed){
-          ct.types.copy('laser_az', this.x, this.y);
+          this.timerTiro.time = 0;
+      }
+
+      if (ct.actions.Shoot.down){
+          if (this.timerTiro.time == 0) {
+              ct.types.copy('laser_az', this.x, this.y);
+          }
       }
 
       this.move();
@@ -825,12 +858,16 @@ types:
     texture: 9a9fbd9c-e346-4bd0-97ce-08c623b39e8e
     extends: {}
     uid: e3f48b26-f02c-4e86-be89-a76093cb1867
-    lastmod: 1619915201905
+    lastmod: 1619963630544
   - name: naoSou
     depth: 0
-    oncreate: |-
+    oncreate: |
       this.speed = 3;
-      this.direction = 270;
+      //if ( ct.random.chance(50) )
+      if ( this.x > 300 )
+          this.direction = 240;
+      else
+          this.direction = 300;
       this.bulletTimer = 60;
       this.ctype = 'Hostile';
     onstep: |
@@ -844,19 +881,27 @@ types:
       if (collided) {
           collided.kill = true;
           this.kill = true;
+          ct.rooms.list['Placar']['0'].score += 200;
       }
 
       this.bulletTimer -= ct.delta;
       if (this.bulletTimer <= 0) {
-          this.bulletTimer = 180;
-          ct.types.copy('quinaife', this.x, this.y + 32);
+          this.bulletTimer = 60;
+          var quinaifeC = ct.types.copy('quinaife', this.x, this.y - 32);
+          quinaifeC.direction = 90;
+          var quinaifeB = ct.types.copy('quinaife', this.x, this.y + 32);
+          quinaifeB.direction = 270;
+          var quinaifeE = ct.types.copy('quinaife', this.x - 32, this.y);
+          quinaifeE.direction = 180;
+          var quinaifeD = ct.types.copy('quinaife', this.x + 32, this.y);
+          quinaifeD.direction = 360;
       }
     ondraw: ''
     ondestroy: ''
     texture: 3ccbb6b0-1049-48a3-bb39-921a270d9217
     extends: {}
     uid: 802ab2b0-e829-4883-87d5-7834368c83c5
-    lastmod: 1619914632105
+    lastmod: 1619966892168
   - name: campbells
     depth: 0
     oncreate: |-
@@ -947,7 +992,7 @@ types:
     texture: 043c2f37-b00b-4142-9cf3-1464108ef47d
     extends: {}
     uid: 1eb8a988-17e6-4c64-af55-48251a11066a
-    lastmod: 1619914455423
+    lastmod: 1619959596670
   - name: laser_vm
     depth: 0
     oncreate: |-
@@ -979,9 +1024,8 @@ types:
     lastmod: 1619835171131
   - name: quinaife
     depth: 0
-    oncreate: |-
+    oncreate: |
       this.speed = 5;
-      this.direction = 270;
       this.rotation = ct.random.deg();
       this.ctype = 'Hostile';
     onstep: |-
@@ -997,12 +1041,15 @@ types:
     texture: 66ae0226-1d25-4573-a5d9-90c2553e028b
     extends: {}
     uid: a4211ea0-f105-4b99-99ff-020bd16fbbb0
-    lastmod: 1619898210979
+    lastmod: 1619966553272
   - name: vacaborgue
     depth: 0
     oncreate: |-
       this.speed = 3;
-      this.direction = 270;
+      if (this.x > 300)
+          this.direction = 260;
+      else
+          this.direction = 280;
       this.bulletTimer = 60;
       this.ctype = 'Hostile';
     onstep: |
@@ -1021,20 +1068,21 @@ types:
 
       this.bulletTimer -= ct.delta;
       if (this.bulletTimer <= 0) {
-          this.bulletTimer = 180;
-          ct.types.copy('laser_am', this.x, this.y + 32);
+          this.bulletTimer = 120;
+          ct.types.copy('laser_am', this.x, this.y + 32).direction = 225;
+          ct.types.copy('laser_am', this.x, this.y + 32).direction = 270;
+          ct.types.copy('laser_am', this.x, this.y + 32).direction = 315;
       }
     ondraw: ''
     ondestroy: ''
     texture: d4858864-d281-4995-b4d9-9625c1dba120
     extends: {}
     uid: c4b972ef-d6c6-4907-afc5-1f1d31036700
-    lastmod: 1619914869025
+    lastmod: 1619967043415
   - name: laser_am
     depth: 0
     oncreate: |-
       this.speed = 5;
-      this.direction = 270;
       this.rotation = ct.random.deg();
       this.ctype = 'Hostile';
     onstep: |-
@@ -1050,17 +1098,17 @@ types:
     texture: 142d21c7-b76b-4232-bade-8892ebb33db1
     extends: {}
     uid: ad9c0499-3489-44be-8783-497efe8929fa
-    lastmod: 1619914436271
+    lastmod: 1619966916863
   - name: alguem_fundo
     depth: 0
     oncreate: ''
     onstep: this.move();
     ondraw: ''
     ondestroy: ''
-    texture: 5db74e9f-2486-46a1-9931-c712cf458754
+    texture: -1
     extends: {}
     uid: 2e1d69f1-5583-460b-a7e2-3b068bc2927a
-    lastmod: 1619901973122
+    lastmod: 1619960343820
   - name: bg
     depth: 0
     oncreate: ''
@@ -1081,6 +1129,38 @@ types:
     extends: {}
     uid: fe626a25-ca2b-41b8-94a7-cb214d224b39
     lastmod: 1619901985418
+  - name: start
+    depth: 0
+    oncreate: this.startTimer = 50;
+    onstep: |
+      this.move();
+    ondraw: |-
+      this.startTimer -= ct.delta;
+      if (this.startTimer <= 0) {
+          if (this.alpha == 1) {
+              this.startTimer = 25;
+              this.alpha --;
+          }
+          else {
+              this.startTimer = 50;
+              this.alpha ++;
+          }
+      }
+          
+    ondestroy: ''
+    texture: 5a6807fa-c457-456e-82c7-060a76b1d865
+    extends: {}
+    uid: 25d268e0-5b6f-451a-9eca-f203796e56eb
+    lastmod: 1619961085276
+  - name: alguem
+    depth: 0
+    oncreate: ''
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: f226aecc-1c8b-44e2-9cc3-f63f5d972162
+    extends: {}
+    uid: a5a1d4e7-9339-4902-95f3-88074c70fef9
 sounds:
   - name: spook kkkk (1)
     uid: 3fd6b9bd-1fc1-46a4-840f-bcdfe3645348
@@ -1148,25 +1228,35 @@ rooms:
       this.xBoundD = 540;
 
       this.asteroidTimer = 20;
-      this.enemyTimer = 180;
+      this.enemyTimer = 60;
+      this.souTimer = 120;
+
       this.itemTimer = 180;
-    onstep: |-
+    onstep: |
       this.asteroidTimer -= ct.delta;
       if (this.asteroidTimer <= 0) {
-          this.asteroidTimer = ct.random.range(20, 200);
-          ct.types.copy(ct.random.dice('meteor_ao', 'meteor_ao2'), ct.random(this.xBoundD), -this.xBoundE);
+          this.asteroidTimer = ct.random.range(20, 60);
+          ct.types.copy(ct.random.dice('meteor_ao', 'meteor_ao2'), ct.random(this.xBoundD), -50);
       }
 
       this.enemyTimer -= ct.delta;
       if (this.enemyTimer <= 0) {
-          this.enemyTimer = ct.random.range(180, 400);
-          ct.types.copy('vacaborgue', ct.random(this.xBoundD), -this.xBoundE);
+          this.enemyTimer = 80;
+          ct.types.copy('vacaborgue', ct.random(this.xBoundD), -50);
       }
 
       this.itemTimer -= ct.delta;
       if (this.itemTimer <= 0 && ct.rooms.list['Placar']['0'].lives < 3) {
           this.itemTimer = ct.random.range(180, 400);
-          ct.types.copy('campbells', ct.random(this.xBoundD), -this.xBoundE);
+          ct.types.copy('campbells', ct.random(this.xBoundD), -50);
+      }
+
+      this.souTimer -= ct.delta;
+      if (ct.rooms.list['Placar']['0'].score > 1000) {
+          if (this.souTimer <= 0) {
+              this.souTimer = ct.random.range(180, 400);
+              ct.types.copy('naoSou', ct.random(this.xBoundD), -50);
+          }
       }
     ondraw: ''
     onleave: ''
@@ -1190,15 +1280,13 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1619914731664
+    lastmod: 1619962617149
   - name: Placar
     oncreate: >-
       this.score = 0;
 
       this.lives = 3;
 
-
-      this.scoreLabel = new PIXI.Text('Score: ' + this.score);
 
       this.scoreLabel = new PIXI.Text('Score: ' + this.score,
       ct.styles.get('ScoreText'));
@@ -1301,7 +1389,38 @@ rooms:
       isUi: true
     gridX: 64
     gridY: 64
-    lastmod: 1619914754144
+    lastmod: 1619967052664
+  - name: Titulo
+    oncreate: |+
+
+    onstep: |
+      if (ct.actions.Shoot.pressed) {
+          ct.rooms.switch('Main');
+      }
+    ondraw: ''
+    onleave: ''
+    width: 800
+    height: 600
+    backgrounds: []
+    copies:
+      - x: 0
+        'y': 0
+        uid: a5a1d4e7-9339-4902-95f3-88074c70fef9
+        exts: {}
+      - x: 320
+        'y': 128
+        uid: 25d268e0-5b6f-451a-9eca-f203796e56eb
+        exts: {}
+    tiles:
+      - depth: -10
+        tiles: []
+        extends: {}
+    uid: bab41831-a5ff-4ead-800c-5c9c736fc31e
+    thumbnail: 5c9c736fc31e
+    extends: {}
+    gridX: 64
+    gridY: 64
+    lastmod: 1619966805176
 actions:
   - name: MoveX
     methods:
@@ -1352,3 +1471,4 @@ settings:
 fonts: []
 palette: []
 styletick: .nan
+startroom: bab41831-a5ff-4ead-800c-5c9c736fc31e
