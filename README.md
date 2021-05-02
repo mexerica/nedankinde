@@ -4,7 +4,7 @@ Jogo criado pra [Paint Jam](https://itch.io/jam/paint-jam-2021), o jogo foi dese
 
 Pra jogar é só entrar no [link do projeto](https://mexerica.itch.io/nedankinde) no Itch.io.
 
-Pra editar o jogo crie um novo projeto no [CT.js](https://docs.ctjs.rocks/) e substitua o arquivo `(nome-do-projeto).ict` pelo nosso [`nedankinde.ict`](/nedankinde.ict) e cole o resto do projeto dentro da pasta criada.
+Pra editar o jogo crie um novo projeto no [CT.js](https://docs.ctjs.rocks/), substitua o arquivo `(nome-do-projeto).ict` pelo nosso [`nedankinde.ict`](/nedankinde.ict) e cole o resto do projeto dentro da pasta criada.
 
 ![Nedankinde](/img/alguem_fundo.png)
 
