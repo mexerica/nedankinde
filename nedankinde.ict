@@ -897,11 +897,16 @@ types:
           quinaifeD.direction = 360;
       }
     ondraw: ''
-    ondestroy: ''
+    ondestroy: |
+      if (ct.rooms.list['Placar']['0'].lives < 3) {
+          if (ct.random.chance(25)) {
+              ct.types.copy('campbells', this.x, this.y);
+          }
+      }
     texture: 3ccbb6b0-1049-48a3-bb39-921a270d9217
     extends: {}
     uid: 802ab2b0-e829-4883-87d5-7834368c83c5
-    lastmod: 1619966892168
+    lastmod: 1619968374609
   - name: campbells
     depth: 0
     oncreate: |-
@@ -909,8 +914,8 @@ types:
       this.direction = 270;
       this.ctype = 'Recover';
 
-      this.scale.x = 0.25;
-      this.scale.y = 0.25;
+      this.scale.x = 0.2;
+      this.scale.y = 0.2;
     onstep: |
       this.move();
     ondraw: ''
@@ -918,11 +923,11 @@ types:
     texture: 0e12d6e2-1a87-4890-9334-75c0a74ca011
     extends: {}
     uid: a26e69f4-f33a-4cc9-b567-94cc2e4cf45a
-    lastmod: 1619914416295
+    lastmod: 1619968155616
   - name: meteor_ao
     depth: 0
     oncreate: |
-      this.speed = ct.random.range(1, 3);
+      this.speed = ct.random.range(3, 6);
       this.direction = ct.random.range(270 - 30, 270 + 30);
       this.depth = 1000;
       this.ctype = 'Hostile';
@@ -947,11 +952,11 @@ types:
     texture: da1180b8-0eb6-46ee-8391-69af5e27081e
     extends: {}
     uid: 6ee12b9d-416d-43f7-8b69-6c9cfe994bc2
-    lastmod: 1619915074232
+    lastmod: 1619968681129
   - name: meteor_ao2
     depth: 0
     oncreate: |
-      this.speed = ct.random.range(1, 3);
+      this.speed = ct.random.range(3, 6);
       this.direction = ct.random.range(270 - 30, 270 + 30);
       this.ctype = 'Hostile';
 
@@ -975,7 +980,7 @@ types:
     texture: eaf087f2-e4f1-4fac-b95f-bb7ca94a0e01
     extends: {}
     uid: 09e13a7c-c3e1-45ed-9e07-f1831a174e6e
-    lastmod: 1619915103347
+    lastmod: 1619968686392
   - name: laser_az
     depth: 0
     oncreate: |-
@@ -1044,14 +1049,25 @@ types:
     lastmod: 1619966553272
   - name: vacaborgue
     depth: 0
-    oncreate: |-
+    oncreate: |
       this.speed = 3;
-      if (this.x > 300)
-          this.direction = 260;
-      else
-          this.direction = 280;
+      if (this.y == -64) {
+          if (this.x <= 300)
+              this.direction = 305;
+          else
+              this.direction = 235;
+      }
+      else {
+          if (this.x <= -300)
+              this.direction = 325;
+          else
+              this.direction = 215;
+      }
       this.bulletTimer = 60;
       this.ctype = 'Hostile';
+
+      this.scale.x = 0.6;
+      this.scale.y = 0.6;
     onstep: |
       this.move();
 
@@ -1074,11 +1090,16 @@ types:
           ct.types.copy('laser_am', this.x, this.y + 32).direction = 315;
       }
     ondraw: ''
-    ondestroy: ''
+    ondestroy: |
+      if (ct.rooms.list['Placar']['0'].lives < 3) {
+          if (ct.random.chance(10)) {
+              ct.types.copy('campbells', this.x, this.y);
+          }
+      }
     texture: d4858864-d281-4995-b4d9-9625c1dba120
     extends: {}
     uid: c4b972ef-d6c6-4907-afc5-1f1d31036700
-    lastmod: 1619967043415
+    lastmod: 1619969323944
   - name: laser_am
     depth: 0
     oncreate: |-
@@ -1228,10 +1249,10 @@ rooms:
       this.xBoundD = 540;
 
       this.asteroidTimer = 20;
-      this.enemyTimer = 60;
+      this.enemyTimer = 80;
       this.souTimer = 120;
 
-      this.itemTimer = 180;
+      this.itemTimer = 400;
     onstep: |
       this.asteroidTimer -= ct.delta;
       if (this.asteroidTimer <= 0) {
@@ -1242,22 +1263,28 @@ rooms:
       this.enemyTimer -= ct.delta;
       if (this.enemyTimer <= 0) {
           this.enemyTimer = 80;
-          ct.types.copy('vacaborgue', ct.random(this.xBoundD), -50);
-      }
-
-      this.itemTimer -= ct.delta;
-      if (this.itemTimer <= 0 && ct.rooms.list['Placar']['0'].lives < 3) {
-          this.itemTimer = ct.random.range(180, 400);
-          ct.types.copy('campbells', ct.random(this.xBoundD), -50);
+          ct.types.copy('vacaborgue', ct.random.range(-128, 300), -64);
+          ct.types.copy('vacaborgue', ct.random.range(320, 640), -64);
+          ct.types.copy('vacaborgue', -128, ct.random.range(0, 300));
+          ct.types.copy('vacaborgue', 704, ct.random.range(0, 300));
       }
 
       this.souTimer -= ct.delta;
       if (ct.rooms.list['Placar']['0'].score > 1000) {
           if (this.souTimer <= 0) {
-              this.souTimer = ct.random.range(180, 400);
+              this.souTimer = ct.random.range(120, 180);
               ct.types.copy('naoSou', ct.random(this.xBoundD), -50);
           }
       }
+      /*
+      if (ct.rooms.list['Placar']['0'].lives < 3) {
+          this.itemTimer -= ct.delta;
+          if (this.itemTimer <= 0) {
+              this.itemTimer = ct.random.range(220, 400);
+              ct.types.copy('campbells', ct.random(this.xBoundD), -50);
+          }
+      }
+      */
     ondraw: ''
     onleave: ''
     width: 800
@@ -1280,7 +1307,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1619962617149
+    lastmod: 1619968863768
   - name: Placar
     oncreate: >-
       this.score = 0;
@@ -1389,7 +1416,7 @@ rooms:
       isUi: true
     gridX: 64
     gridY: 64
-    lastmod: 1619967052664
+    lastmod: 1619968924384
   - name: Titulo
     oncreate: |+
 
