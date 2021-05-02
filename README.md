@@ -7,4 +7,5 @@ Pra editar o jogo crie um novo projeto no [CT.js](https://docs.ctjs.rocks/) e su
 ![Nedankinde](/img/alguem_fundo.png)
 
 Programação, enredo e sons: [tiago](https://github.com/mexerica)
+
 Programação e arte: [ricardo](https://github.com/sleiph)
