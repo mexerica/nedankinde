@@ -154,7 +154,7 @@ textures:
         'y': -77
     closedStrip: true
     r: 64
-    lastmod: 1619826491692
+    lastmod: 1619984072155
   - name: laser_az
     untill: 0
     grid:
@@ -444,8 +444,8 @@ textures:
       - 1
       - 1
     axis:
-      - 0
-      - 0
+      - 61
+      - 64
     marginx: 0
     marginy: 0
     imgWidth: 128
@@ -455,7 +455,7 @@ textures:
     offx: 0
     offy: 0
     origname: ie809efe7-bdf8-47bd-9a5c-574b026fd5f9.png
-    shape: rect
+    shape: circle
     left: 0
     right: 128
     top: 0
@@ -463,14 +463,16 @@ textures:
     uid: e809efe7-bdf8-47bd-9a5c-574b026fd5f9
     padding: 1
     source: 'C:\Users\flaud\OneDrive\Área de Trabalho\Paint Jam\nedankinde\img\oio.png'
+    r: 64
+    lastmod: 1619988398163
   - name: boca
     untill: 0
     grid:
       - 1
       - 1
     axis:
-      - 0
-      - 0
+      - 64
+      - 63
     marginx: 0
     marginy: 0
     imgWidth: 128
@@ -480,7 +482,7 @@ textures:
     offx: 0
     offy: 0
     origname: idfdf7cea-4409-446f-855d-99bd3444b91d.png
-    shape: rect
+    shape: strip
     left: 0
     right: 128
     top: 0
@@ -489,14 +491,45 @@ textures:
     padding: 1
     source: 'C:\Users\flaud\OneDrive\Área de Trabalho\Paint Jam\nedankinde\img\boca.png'
     ignoreTiledUse: true
+    lastmod: 1619981458917
+    stripPoints:
+      - x: -4
+        'y': -51
+      - x: 13
+        'y': -50
+      - x: 33
+        'y': -30
+      - x: 42
+        'y': -14
+      - x: 29
+        'y': 3
+      - x: 18
+        'y': 10
+      - x: 3
+        'y': 36
+      - x: -18
+        'y': 55
+      - x: -38
+        'y': 52
+      - x: -55
+        'y': 46
+      - x: -50
+        'y': 27
+      - x: -31
+        'y': 9
+      - x: -45
+        'y': -16
+      - x: -21
+        'y': -47
+    closedStrip: true
   - name: mamae
     untill: 0
     grid:
       - 1
       - 1
     axis:
-      - 0
-      - 0
+      - 63
+      - 73
     marginx: 0
     marginy: 0
     imgWidth: 128
@@ -506,7 +539,7 @@ textures:
     offx: 0
     offy: 0
     origname: i564407b6-15d1-4963-bdbc-bbba7b0e9e91.png
-    shape: rect
+    shape: strip
     left: 0
     right: 128
     top: 0
@@ -516,6 +549,29 @@ textures:
     source: >-
       C:\Users\flaud\OneDrive\Área de Trabalho\Paint
       Jam\nedankinde\img\mamae.png
+    stripPoints:
+      - x: 0
+        'y': -64
+      - x: 26
+        'y': -38
+      - x: 39
+        'y': -51
+      - x: 32
+        'y': -13
+      - x: 40
+        'y': 24
+      - x: 20
+        'y': 50
+      - x: 2
+        'y': 23
+      - x: -15
+        'y': 49
+      - x: -39
+        'y': 30
+      - x: -34
+        'y': -11
+    closedStrip: true
+    lastmod: 1619985620718
   - name: laser_am
     untill: 0
     grid:
@@ -543,15 +599,15 @@ textures:
     source: >-
       C:\Users\flaud\OneDrive\Área de Trabalho\Paint
       Jam\nedankinde\img\laser_am.png
-    lastmod: 1619888454471
+    lastmod: 1619980696733
   - name: nidou
     untill: 0
     grid:
       - 1
       - 1
     axis:
-      - 0
-      - 0
+      - 67
+      - 65
     marginx: 0
     marginy: 0
     imgWidth: 128
@@ -561,7 +617,7 @@ textures:
     offx: 0
     offy: 0
     origname: i81556be4-4948-495c-aaa3-2d0961ecc5ce.png
-    shape: rect
+    shape: strip
     left: 0
     right: 128
     top: 0
@@ -571,6 +627,23 @@ textures:
     source: >-
       C:\Users\flaud\OneDrive\Área de Trabalho\Paint
       Jam\nedankinde\img\nidou.png
+    stripPoints:
+      - x: 0
+        'y': -64
+      - x: 8
+        'y': -40
+      - x: 0
+        'y': 30
+      - x: -2
+        'y': 57
+      - x: -9
+        'y': 41
+      - x: -9
+        'y': 10
+      - x: -14
+        'y': -31
+    closedStrip: true
+    lastmod: 1619985646225
   - name: tesourasLado
     untill: 0
     grid:
@@ -631,8 +704,8 @@ textures:
       - 1
       - 1
     axis:
-      - 0
-      - 0
+      - 63
+      - 64
     marginx: 0
     marginy: 0
     imgWidth: 128
@@ -642,7 +715,7 @@ textures:
     offx: 0
     offy: 0
     origname: i7ed207e1-0eee-453f-b47d-967c77615449.png
-    shape: rect
+    shape: strip
     left: 0
     right: 128
     top: 0
@@ -652,14 +725,49 @@ textures:
     source: >-
       C:\Users\flaud\OneDrive\Área de Trabalho\Paint
       Jam\nedankinde\img\meriline.png
+    stripPoints:
+      - x: 0
+        'y': -64
+      - x: 20
+        'y': -61
+      - x: 33
+        'y': -51
+      - x: 49
+        'y': -43
+      - x: 61
+        'y': -20
+      - x: 53
+        'y': 17
+      - x: 32
+        'y': 46
+      - x: 17
+        'y': 67
+      - x: -4
+        'y': 60
+      - x: -17
+        'y': 65
+      - x: -27
+        'y': 52
+      - x: -43
+        'y': 34
+      - x: -50
+        'y': 12
+      - x: -47
+        'y': -19
+      - x: -39
+        'y': -43
+      - x: -21
+        'y': -53
+    closedStrip: true
+    lastmod: 1619985532045
   - name: bumerangue
     untill: 0
     grid:
       - 1
       - 1
     axis:
-      - 0
-      - 0
+      - 16
+      - 9
     marginx: 0
     marginy: 0
     imgWidth: 64
@@ -670,15 +778,28 @@ textures:
     offy: 0
     origname: i84e6c912-b61b-4fb2-9b15-4d064d5e548b.png
     shape: rect
-    left: 0
-    right: 64
-    top: 0
-    bottom: 64
+    left: 16
+    right: 48
+    top: 9
+    bottom: 55
     uid: 84e6c912-b61b-4fb2-9b15-4d064d5e548b
     padding: 1
     source: >-
       C:\Users\flaud\OneDrive\Área de Trabalho\Paint
       Jam\nedankinde\img\bumerangue.png
+    stripPoints:
+      - x: 0
+        'y': -32
+      - x: 30
+        'y': -10
+      - x: 19
+        'y': 26
+      - x: -19
+        'y': 26
+      - x: -30
+        'y': -10
+    closedStrip: true
+    lastmod: 1619983292147
   - name: kannyvete
     untill: 0
     grid:
@@ -783,6 +904,94 @@ textures:
     uid: f226aecc-1c8b-44e2-9cc3-f63f5d972162
     padding: 1
     source: 'C:\Users\Ricardo\Desktop\alguem.png'
+  - name: meteor_inho
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 31
+      - 32
+    marginx: 0
+    marginy: 0
+    imgWidth: 64
+    imgHeight: 64
+    width: 64
+    height: 64
+    offx: 0
+    offy: 0
+    origname: ie982c025-efe4-4a47-95e0-0ad579c35e2f.png
+    shape: strip
+    left: 0
+    right: 64
+    top: 0
+    bottom: 64
+    uid: e982c025-efe4-4a47-95e0-0ad579c35e2f
+    padding: 1
+    source: >-
+      C:\Users\flaud\OneDrive\Área de Trabalho\Paint
+      Jam\nedankinde\img\meteor_inho.png
+    stripPoints:
+      - x: -1
+        'y': -26
+      - x: 30
+        'y': -10
+      - x: 19
+        'y': 20
+      - x: -3
+        'y': 25
+      - x: -16
+        'y': 16
+      - x: -21
+        'y': -5
+    closedStrip: true
+    lastmod: 1619981096356
+  - name: cocacola
+    untill: 0
+    grid:
+      - 1
+      - 1
+    axis:
+      - 66
+      - 70
+    marginx: 0
+    marginy: 0
+    imgWidth: 128
+    imgHeight: 128
+    width: 128
+    height: 128
+    offx: 0
+    offy: 0
+    origname: i7918182b-780d-49cf-a78a-6f49802635ee.png
+    shape: strip
+    left: 0
+    right: 128
+    top: 0
+    bottom: 128
+    uid: 7918182b-780d-49cf-a78a-6f49802635ee
+    padding: 1
+    source: >-
+      C:\Users\flaud\OneDrive\Área de Trabalho\Paint
+      Jam\nedankinde\img\cocacola.png
+    stripPoints:
+      - x: 0
+        'y': -64
+      - x: 30
+        'y': -47
+      - x: 35
+        'y': -25
+      - x: 28
+        'y': 46
+      - x: -1
+        'y': 52
+      - x: -28
+        'y': 44
+      - x: -29
+        'y': -17
+      - x: -22
+        'y': -50
+    closedStrip: true
+    lastmod: 1619984660731
 skeletons: []
 types:
   - name: tesouras
@@ -831,6 +1040,13 @@ types:
           }
       }
 
+      if (ct.actions.Shoot2.pressed){
+          if (ct.rooms.list['Placar']['0'].special >  0){
+              ct.types.copy('bumerangue', this.x, this.y);
+              ct.rooms.list['Placar']['0'].special --;
+          }
+      }
+
       this.move();
 
       var hostile = ct.place.occupied(this, this.x, this.y, 'Hostile');
@@ -849,8 +1065,16 @@ types:
       var recover = ct.place.occupied(this, this.x, this.y, 'Recover');
       if (recover) {
           recover.kill = true;
-          if (ct.rooms.list['Placar']['0'].lives < 3) {
+          if (ct.rooms.list['Placar']['0'].lives < 5) {
               ct.rooms.list['Placar']['0'].lives ++;
+          }
+      }
+
+      var boom = ct.place.occupied(this, this.x, this.y, 'Boom');
+      if (boom) {
+          boom.kill = true;
+          if (ct.rooms.list['Placar']['0'].special < 5) {
+              ct.rooms.list['Placar']['0'].special ++;
           }
       }
     ondraw: ''
@@ -858,7 +1082,7 @@ types:
     texture: 9a9fbd9c-e346-4bd0-97ce-08c623b39e8e
     extends: {}
     uid: e3f48b26-f02c-4e86-be89-a76093cb1867
-    lastmod: 1619963630544
+    lastmod: 1619985664452
   - name: naoSou
     depth: 0
     oncreate: |
@@ -884,6 +1108,12 @@ types:
           ct.rooms.list['Placar']['0'].score += 200;
       }
 
+      var collided2 = ct.place.meet(this, this.x, this.y, 'bumerangue');
+      if (collided2) {
+          this.kill = true;
+          ct.rooms.list['Placar']['0'].score += 250;
+      }
+
       this.bulletTimer -= ct.delta;
       if (this.bulletTimer <= 0) {
           this.bulletTimer = 60;
@@ -899,15 +1129,21 @@ types:
       }
     ondraw: ''
     ondestroy: |
-      if (ct.rooms.list['Placar']['0'].lives < 3) {
+      if (ct.rooms.list['Placar']['0'].lives < 5) {
           if (ct.random.chance(25)) {
               ct.types.copy('campbells', this.x, this.y);
+          }
+      }
+
+      if (ct.rooms.list['Placar']['0'].special < 5) {
+          if (ct.random.chance(10)) {
+              ct.types.copy('cocacola', this.x, this.y);
           }
       }
     texture: 3ccbb6b0-1049-48a3-bb39-921a270d9217
     extends: {}
     uid: 802ab2b0-e829-4883-87d5-7834368c83c5
-    lastmod: 1619974364930
+    lastmod: 1619985828506
   - name: campbells
     depth: 0
     oncreate: |-
@@ -924,7 +1160,7 @@ types:
     texture: 0e12d6e2-1a87-4890-9334-75c0a74ca011
     extends: {}
     uid: a26e69f4-f33a-4cc9-b567-94cc2e4cf45a
-    lastmod: 1619968155616
+    lastmod: 1619984129170
   - name: meteor_ao
     depth: 0
     oncreate: |
@@ -936,7 +1172,7 @@ types:
 
       this.scale.x = 0.6;
       this.scale.y = 0.6;
-    onstep: |-
+    onstep: |+
       this.move();
 
       if (this.y > ct.viewHeight + 80) {
@@ -949,12 +1185,19 @@ types:
           this.kill = true;
           ct.rooms.list['Placar']['0'].score += 50;
       }
+
+      var collided2 = ct.place.meet(this, this.x, this.y, 'bumerangue');
+      if (collided2) {
+          this.kill = true;
+          ct.rooms.list['Placar']['0'].score += 50;
+      }
+
     ondraw: ''
     ondestroy: ''
     texture: da1180b8-0eb6-46ee-8391-69af5e27081e
     extends: {}
     uid: 6ee12b9d-416d-43f7-8b69-6c9cfe994bc2
-    lastmod: 1619971943865
+    lastmod: 1619983506404
   - name: meteor_ao2
     depth: 0
     oncreate: |
@@ -979,12 +1222,18 @@ types:
           this.kill = true;
           ct.rooms.list['Placar']['0'].score += 50;
       }
+
+      var collided2 = ct.place.meet(this, this.x, this.y, 'bumerangue');
+      if (collided2) {
+          this.kill = true;
+          ct.rooms.list['Placar']['0'].score += 50;
+      }
     ondraw: ''
     ondestroy: ''
     texture: eaf087f2-e4f1-4fac-b95f-bb7ca94a0e01
     extends: {}
     uid: 09e13a7c-c3e1-45ed-9e07-f1831a174e6e
-    lastmod: 1619971952002
+    lastmod: 1619983523177
   - name: laser_az
     depth: 0
     oncreate: |-
@@ -1001,7 +1250,7 @@ types:
     texture: 043c2f37-b00b-4142-9cf3-1464108ef47d
     extends: {}
     uid: 1eb8a988-17e6-4c64-af55-48251a11066a
-    lastmod: 1619959596670
+    lastmod: 1619985726682
   - name: laser_vm
     depth: 0
     oncreate: |-
@@ -1020,7 +1269,7 @@ types:
     texture: e6aef562-0ea6-48e7-a2c4-330e049dd4a3
     extends: {}
     uid: 5925847c-0cc6-437f-9d78-44362024e4e8
-    lastmod: 1619903628188
+    lastmod: 1619981513973
   - name: padrao
     depth: 0
     oncreate: ''
@@ -1050,7 +1299,7 @@ types:
     texture: 66ae0226-1d25-4573-a5d9-90c2553e028b
     extends: {}
     uid: a4211ea0-f105-4b99-99ff-020bd16fbbb0
-    lastmod: 1619966553272
+    lastmod: 1619983228123
   - name: vacaborgue
     depth: 0
     oncreate: |
@@ -1086,6 +1335,12 @@ types:
           ct.rooms.list['Placar']['0'].score += 100;
       }
 
+      var collided2 = ct.place.meet(this, this.x, this.y, 'bumerangue');
+      if (collided2) {
+          this.kill = true;
+          ct.rooms.list['Placar']['0'].score += 150;
+      }
+
       this.bulletTimer -= ct.delta;
       if (this.bulletTimer <= 0) {
           this.bulletTimer = 120;
@@ -1095,11 +1350,11 @@ types:
               .direction = 270;
           ct.types.copy('laser_am', this.x, this.y + 32)
               .direction = 315;
-          ct.sound.spawn('piu')
+          ct.sound.spawn('pow')
       }
     ondraw: ''
     ondestroy: |
-      if (ct.rooms.list['Placar']['0'].lives < 3) {
+      if (ct.rooms.list['Placar']['0'].lives < 5) {
           if (ct.random.chance(10)) {
               ct.types.copy('campbells', this.x, this.y);
           }
@@ -1107,7 +1362,7 @@ types:
     texture: d4858864-d281-4995-b4d9-9625c1dba120
     extends: {}
     uid: c4b972ef-d6c6-4907-afc5-1f1d31036700
-    lastmod: 1619969323944
+    lastmod: 1619988526027
   - name: laser_am
     depth: 0
     oncreate: |
@@ -1127,10 +1382,10 @@ types:
       this.rotation += 4 * ct.delta;
     ondraw: ''
     ondestroy: ''
-    texture: e6aef562-0ea6-48e7-a2c4-330e049dd4a3
+    texture: 142d21c7-b76b-4232-bade-8892ebb33db1
     extends: {}
     uid: ad9c0499-3489-44be-8783-497efe8929fa
-    lastmod: 1619974182043
+    lastmod: 1619985748258
   - name: alguem_fundo
     depth: 0
     oncreate: ''
@@ -1140,7 +1395,7 @@ types:
     texture: -1
     extends: {}
     uid: 2e1d69f1-5583-460b-a7e2-3b068bc2927a
-    lastmod: 1619960343820
+    lastmod: 1619983053755
   - name: bg
     depth: 0
     oncreate: ''
@@ -1153,14 +1408,29 @@ types:
     lastmod: 1619901979266
   - name: bumerangue
     depth: 0
-    oncreate: ''
-    onstep: this.move();
+    oncreate: |-
+      this.speed = 4;
+      this.direction = 90;
+      this.rotation = ct.random.deg();
+    onstep: |
+      if (this.y < -40) {
+          this.direction = 270;
+      }
+
+      if (this.y > 700){
+          this.kill = true;
+      }
+
+      this.move();
+
+
+      this.rotation += 4 * ct.delta;
     ondraw: ''
     ondestroy: ''
     texture: 84e6c912-b61b-4fb2-9b15-4d064d5e548b
     extends: {}
     uid: fe626a25-ca2b-41b8-94a7-cb214d224b39
-    lastmod: 1619901985418
+    lastmod: 1619983627985
   - name: start
     depth: 0
     oncreate: this.startTimer = 50;
@@ -1193,50 +1463,296 @@ types:
     texture: f226aecc-1c8b-44e2-9cc3-f63f5d972162
     extends: {}
     uid: a5a1d4e7-9339-4902-95f3-88074c70fef9
+  - name: boca
+    depth: 0
+    oncreate: |-
+      this.speed = 3;
+      this.direction = 270;
+      this.bulletTimer = 1;
+      this.ctype = 'Hostile';
+    onstep: |-
+      this.move();
+
+      if (this.y > ct.viewHeight + 80) {
+          this.kill = true;
+      }
+
+      var collided = ct.place.meet(this, this.x, this.y, 'laser_az');
+      if (collided) {
+          collided.kill = true;
+          this.kill = true;
+          ct.rooms.list['Placar']['0'].score += 100;
+      }
+
+      var collided2 = ct.place.meet(this, this.x, this.y, 'bumerangue');
+      if (collided2) {
+          this.kill = true;
+          ct.rooms.list['Placar']['0'].score += 300;
+      }
+
+      this.bulletTimer -= ct.delta;
+      if (this.bulletTimer <= 0) {
+          this.bulletTimer = 180;
+          ct.types.copy('meteor_inho', this.x, this.y + 32);
+          ct.sound.spawn('vush')
+      }
+    ondraw: ''
+    ondestroy: |-
+      if (ct.rooms.list['Placar']['0'].lives < 5) {
+          if (ct.random.chance(50)) {
+              ct.types.copy('campbells', this.x, this.y);
+          }
+      }
+
+      if (ct.rooms.list['Placar']['0'].special < 5) {
+          if (ct.random.chance(50)) {
+              ct.types.copy('cocacola', this.x, this.y);
+          }
+      }
+    texture: dfdf7cea-4409-446f-855d-99bd3444b91d
+    extends: {}
+    uid: d174e44a-bcc5-4cc2-89e9-a7e67160cffd
+    lastmod: 1619984759593
+  - name: meteor_inho
+    depth: 0
+    oncreate: |
+      this.speed = 1;
+      this.rotation = ct.random.deg();
+      this.ctype = 'Hostile';
+
+      this.scale.x = 0.7;
+      this.scale.y = 0.7;
+    onstep: |-
+      this.move();
+      if (this.y < -40) {
+          this.kill = true;
+      }
+
+      this.move();
+
+      this.rotation += 4 * ct.delta;
+    ondraw: ''
+    ondestroy: ''
+    texture: e982c025-efe4-4a47-95e0-0ad579c35e2f
+    extends: {}
+    uid: b46bb360-b4c3-47b4-9aad-5531b6b2c675
+    lastmod: 1619981600989
+  - name: cocacola
+    depth: 0
+    oncreate: |-
+      this.speed = 3;
+      this.direction = 270;
+      this.ctype = 'Boom';
+
+      this.scale.x = 0.2;
+      this.scale.y = 0.2;
+    onstep: this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 7918182b-780d-49cf-a78a-6f49802635ee
+    extends: {}
+    uid: 87632a37-ced5-4b17-bd79-4347ed7fdaa2
+    lastmod: 1619985798723
+  - name: meriline
+    depth: 0
+    oncreate: |-
+      this.speed = 3;
+      this.direction = 270;
+      this.ctype = 'Hostile';
+    onstep: |
+      this.move();
+      this.move();
+
+      if (this.y > ct.viewHeight + 80) {
+          this.kill = true;
+      }
+
+      var collided = ct.place.meet(this, this.x, this.y, 'laser_az');
+      if (collided) {
+          collided.kill = true;
+          this.kill = true;
+          ct.rooms.list['Placar']['0'].score += 100;
+      }
+
+      var collided2 = ct.place.meet(this, this.x, this.y, 'bumerangue');
+      if (collided2) {
+          this.kill = true;
+          ct.rooms.list['Placar']['0'].score += 300;
+      }
+    ondraw: ''
+    ondestroy: |-
+      if (ct.rooms.list['Placar']['0'].lives < 5) {
+          if (ct.random.chance(100)) {
+              ct.types.copy('campbells', this.x, this.y);
+          }
+      }
+
+      if (ct.rooms.list['Placar']['0'].special < 5) {
+          if (ct.random.chance(100)) {
+              ct.types.copy('cocacola', this.x, this.y);
+          }
+      }
+    texture: 7ed207e1-0eee-453f-b47d-967c77615449
+    extends: {}
+    uid: ce7e0037-7439-416e-8833-b6d4265412c9
+    lastmod: 1619985244345
+  - name: mamae
+    depth: 0
+    oncreate: |-
+      this.bulletTimer = 10;
+      this.directidle = 270;
+      this.ctype = 'Hostile';
+    onstep: |
+      this.move();
+
+      if (this.y > ct.viewHeight + 80) {
+          this.kill = true;
+      }
+
+      var collided = ct.place.meet(this, this.x, this.y, 'laser_az');
+      if (collided) {
+          collided.kill = true;
+          this.kill = true;
+          ct.rooms.list['Placar']['0'].score += 200;
+      }
+
+      var collided2 = ct.place.meet(this, this.x, this.y, 'bumerangue');
+      if (collided2) {
+          this.kill = true;
+          ct.rooms.list['Placar']['0'].score += 250;
+      }
+
+      this.bulletTimer -= ct.delta;
+      if (this.bulletTimer <= 0) {
+          this.bulletTimer = 10;
+          var agulha = ct.types.copy('nidou', this.x, this.y)
+          agulha.direction = this.directidle;
+          agulha.rotation = this.directidle + 90;
+          this.directidle+=15;
+          if (this.directidle > 360)
+              this.directidle = 0;
+          ct.sound.spawn('cut')
+      }
+          
+    ondraw: ''
+    ondestroy: ''
+    texture: 564407b6-15d1-4963-bdbc-bbba7b0e9e91
+    extends: {}
+    uid: eeb297d6-c3ba-4114-afde-171e09fa526b
+    lastmod: 1619988479014
+  - name: nidou
+    depth: 0
+    oncreate: |
+      this.speed = 5;
+      this.ctype = 'Hostile';
+
+      this.scale.x = 0.5;
+      this.scale.y = 0.5;
+    onstep: |
+      if (this.y < -40) {
+          this.kill = true;
+      }
+
+      this.move();
+    ondraw: ''
+    ondestroy: ''
+    texture: 81556be4-4948-495c-aaa3-2d0961ecc5ce
+    extends: {}
+    uid: 07af0c90-2008-45f6-b4c0-b73f22c46c82
+    lastmod: 1619987971082
+  - name: oio
+    depth: 0
+    oncreate: |
+      this.bulletTimer = 20;
+      this.ctype = 'Hostile';
+    onstep: |
+      this.move();
+
+      this.move();
+
+      if (this.y > ct.viewHeight + 80) {
+          this.kill = true;
+      }
+
+      var collided = ct.place.meet(this, this.x, this.y, 'laser_az');
+      if (collided) {
+          collided.kill = true;
+          this.kill = true;
+          ct.rooms.list['Placar']['0'].score += 200;
+      }
+
+      var collided2 = ct.place.meet(this, this.x, this.y, 'bumerangue');
+      if (collided2) {
+          this.kill = true;
+          ct.rooms.list['Placar']['0'].score += 250;
+      }
+
+      this.bulletTimer -= ct.delta;
+      if (this.bulletTimer <= 0) {
+          this.bulletTimer = 60;
+          this.bulletTimer -= ct.delta; 
+         ct.types.copy('laser_am', this.x - 64, this.y)
+              .direction = 180;
+          ct.types.copy('laser_am', this.x - 32, this.y)
+              .direction = 225;
+          ct.types.copy('laser_am', this.x, this.y)
+              .direction = 270;
+          ct.types.copy('laser_am', this.x + 32, this.y)
+              .direction = 315;
+          ct.types.copy('laser_am', this.x + 64, this.y)
+              .direction = 360;
+      }
+          
+    ondraw: ''
+    ondestroy: ''
+    texture: e809efe7-bdf8-47bd-9a5c-574b026fd5f9
+    extends: {}
+    uid: b6aacc79-9f90-4a3a-8682-e467e1878359
+    lastmod: 1619988554150
 sounds:
-  - name: cut
-    uid: 6b2131e1-e4a9-4081-8811-41c1f88f2205
-    origname: s6b2131e1-e4a9-4081-8811-41c1f88f2205.mp3
-    lastmod: 1619906507324
   - name: boomer
-    uid: 1474f63c-eccc-444a-aad7-6ab3f90f9786
-    origname: s1474f63c-eccc-444a-aad7-6ab3f90f9786.mp3
-    lastmod: 1619906740806
+    uid: 48037095-132d-406d-b06e-536294dca931
+    origname: s48037095-132d-406d-b06e-536294dca931.mp3
+    lastmod: 1619980398920
+  - name: cut
+    uid: 9279d18a-9c1f-41d2-a1c6-d4a1480fcda3
+    origname: s9279d18a-9c1f-41d2-a1c6-d4a1480fcda3.mp3
+    lastmod: 1619980404710
   - name: piu
-    uid: 81e73b16-ab3b-44d2-9b93-0ff5a8841631
-    origname: s81e73b16-ab3b-44d2-9b93-0ff5a8841631.mp3
-    lastmod: 1619906763015
+    uid: 0fed2d94-115f-40ff-aecd-45343288c682
+    origname: s0fed2d94-115f-40ff-aecd-45343288c682.mp3
+    lastmod: 1619980411093
   - name: pow
-    uid: 37c2495e-518b-4014-b056-4b54fed7b480
-    origname: s37c2495e-518b-4014-b056-4b54fed7b480.mp3
-    lastmod: 1619906778791
+    uid: b5e76c34-4968-4945-ac64-277ec472b115
+    origname: sb5e76c34-4968-4945-ac64-277ec472b115.mp3
+    lastmod: 1619980417588
   - name: tan
-    uid: a3500ff9-394e-4283-b409-2c990f1d5854
-    origname: sa3500ff9-394e-4283-b409-2c990f1d5854.mp3
-    lastmod: 1619906786444
+    uid: 7ed5894d-03f6-4b88-a20f-75e3ce13a0a3
+    origname: s7ed5894d-03f6-4b88-a20f-75e3ce13a0a3.mp3
+    lastmod: 1619980424237
   - name: tututu
-    uid: 54d93bff-d98d-4ec9-bed4-a4fb8d6d5618
-    origname: s54d93bff-d98d-4ec9-bed4-a4fb8d6d5618.mp3
-    lastmod: 1619906794383
+    uid: e99cd74f-4248-4b0d-bb56-5679e0aa9fe2
+    origname: se99cd74f-4248-4b0d-bb56-5679e0aa9fe2.mp3
+    lastmod: 1619980431401
   - name: vium
-    uid: 6374e36c-38c4-4776-b31c-d46df10ff9ee
-    origname: s6374e36c-38c4-4776-b31c-d46df10ff9ee.mp3
-    lastmod: 1619906805152
+    uid: bb9bbc8c-09f2-457a-aea6-d15c627358b6
+    origname: sbb9bbc8c-09f2-457a-aea6-d15c627358b6.mp3
+    lastmod: 1619980437650
   - name: vush
-    uid: 814c6b01-a660-4da3-9107-5b903a898dbb
-    origname: s814c6b01-a660-4da3-9107-5b903a898dbb.mp3
-    lastmod: 1619906809462
+    uid: 31a6c346-597d-4108-a509-2b34b4778ac2
+    origname: s31a6c346-597d-4108-a509-2b34b4778ac2.mp3
+    lastmod: 1619980444631
 styles:
   - name: ScoreText
     uid: 077f4198-041a-4078-92b1-0fdc4ba7a225
     origname: s0fdc4ba7a225
     font:
       family: sans-serif
-      size: 32
+      size: 24
       weight: '800'
       italic: false
       halign: left
-    lastmod: 1619895564903
+    lastmod: 1619984592598
     fill:
       type: '0'
       color: '#FFFFFF'
@@ -1250,9 +1766,11 @@ rooms:
 
       this.asteroidTimer = 20;
       this.enemyTimer = 80;
-      this.souTimer = 120;
-
-      this.itemTimer = 400;
+      this.souTimer = 150;
+      this.bocaTimer = 120;
+      this.meriTimer = 150;
+      this.mamaTimer = 150;
+      this.eyeTimer = 150;
     onstep: |
       this.asteroidTimer -= ct.delta;
       if (this.asteroidTimer <= 0) {
@@ -1261,30 +1779,55 @@ rooms:
       }
 
       this.enemyTimer -= ct.delta;
-      if (this.enemyTimer <= 0) {
-          this.enemyTimer = 80;
-          ct.types.copy('vacaborgue', ct.random.range(-128, 300), -64);
-          ct.types.copy('vacaborgue', ct.random.range(320, 640), -64);
-          ct.types.copy('vacaborgue', -128, ct.random.range(0, 300));
-          ct.types.copy('vacaborgue', 704, ct.random.range(0, 300));
-      }
+      if (ct.rooms.list['Placar']['0'].score > 500) {
+          if (this.enemyTimer <= 0){
+              this.enemyTimer = 80;
+              ct.types.copy('vacaborgue', ct.random.range(-128, 300), -64);
+              ct.types.copy('vacaborgue', ct.random.range(320, 640), -64);
+              ct.types.copy('vacaborgue', -128, ct.random.range(0, 300));
+              ct.types.copy('vacaborgue', 704, ct.random.range(0, 300));
+          } 
+      }    
 
       this.souTimer -= ct.delta;
-      if (ct.rooms.list['Placar']['0'].score > 1000) {
+      if (ct.rooms.list['Placar']['0'].score > 2000) {
           if (this.souTimer <= 0) {
-              this.souTimer = ct.random.range(120, 180);
+              this.souTimer = ct.random.range(120, 220);
               ct.types.copy('naoSou', ct.random(this.xBoundD), -50);
           }
       }
-      /*
-      if (ct.rooms.list['Placar']['0'].lives < 3) {
-          this.itemTimer -= ct.delta;
-          if (this.itemTimer <= 0) {
-              this.itemTimer = ct.random.range(220, 400);
-              ct.types.copy('campbells', ct.random(this.xBoundD), -50);
+
+      this.meriTimer -= ct.delta;
+      if (ct.rooms.list['Placar']['0'].score > 1500) {
+          if (this.meriTimer <= 0) {
+              this.meriTimer = ct.random.range(120, 220);
+              ct.types.copy('meriline', ct.random(this.xBoundD), -50);
           }
       }
-      */
+
+      this.eyeTimer -= ct.delta;
+      if (ct.rooms.list['Placar']['0'].score > 1500) {
+          if (this.eyeTimer <= 0) {
+              this.eyeTimer = ct.random.range(120, 220);
+              ct.types.copy('oio', 320, 256);
+          }
+      }
+
+      this.bocaTimer -= ct.delta;
+      if (ct.rooms.list['Placar']['0'].score > 2500) {
+          if (this.bocaTimer <= 0) {
+              this.bocaTimer = ct.random.range(120, 220);
+              ct.types.copy('boca', ct.random(this.xBoundD), -50);
+          }
+      }
+
+      this.mamaTimer -= ct.delta;
+      if (ct.rooms.list['Placar']['0'].score > 3000) {
+          if (this.mamaTimer <= 0) {
+              this.mamaTimer = ct.random.range(120, 220);
+              ct.types.copy('mamae', 320, 128);
+          }
+      }
     ondraw: ''
     onleave: ''
     width: 800
@@ -1294,7 +1837,7 @@ rooms:
         texture: 97a08841-ded9-4538-96c5-dc580412a4bd
         extends: {}
     copies:
-      - x: 384
+      - x: 320
         'y': 512
         uid: e3f48b26-f02c-4e86-be89-a76093cb1867
         exts: {}
@@ -1307,12 +1850,14 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1619974556877
+    lastmod: 1619985238376
   - name: Placar
     oncreate: >-
       this.score = 0;
 
-      this.lives = 3;
+      this.lives = 5;
+
+      this.special = 5;
 
 
       this.scoreLabel = new PIXI.Text('Score: ' + this.score,
@@ -1337,10 +1882,23 @@ rooms:
       this.livesLabel.y = 60;
 
       this.livesLabel.depth = 1000;
+
+
+      this.specialLabel = new PIXI.Text('Boomerangs: ' + this.special,
+      ct.styles.get('ScoreText'));
+
+      this.addChild(this.specialLabel);
+
+      this.specialLabel.x = 580;
+
+      this.specialLabel.y = 90;
+
+      this.specialLabel.depth = 1000;
     onstep: ''
     ondraw: |-
       this.scoreLabel.text = 'Score: ' + this.score;
       this.livesLabel.text = 'Lives: ' + this.lives;
+      this.specialLabel.text = 'Boomerangs: ' + this.special;
     onleave: ''
     width: 800
     height: 600
@@ -1416,7 +1974,7 @@ rooms:
       isUi: true
     gridX: 64
     gridY: 64
-    lastmod: 1619972096273
+    lastmod: 1619984831053
   - name: Titulo
     oncreate: ''
     onstep: |
@@ -1455,16 +2013,26 @@ actions:
         multiplier: -1
       - code: keyboard.ArrowRight
         multiplier: 1
+      - code: keyboard.KeyA
+        multiplier: -1
+      - code: keyboard.KeyD
   - name: MoveY
     methods:
       - code: keyboard.ArrowUp
         multiplier: -1
       - code: keyboard.ArrowDown
         multiplier: 1
+      - code: keyboard.KeyW
+        multiplier: -1
+      - code: keyboard.KeyS
   - name: Shoot
     methods:
       - code: keyboard.KeyZ
       - code: keyboard.KeyJ
+  - name: Shoot2
+    methods:
+      - code: keyboard.KeyX
+      - code: keyboard.KeyK
 emitterTandems: []
 scripts: []
 starting: 0
