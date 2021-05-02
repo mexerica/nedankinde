@@ -765,7 +765,9 @@ skeletons: []
 types:
   - name: tesouras
     depth: 0
-    oncreate: ''
+    oncreate: |
+      this.scale.x = 0.7;
+      this.scale.y = 0.7;
     onstep: |-
       /**
        * Move the ship
@@ -779,11 +781,11 @@ types:
       /**
        * Check whether the ship fell off the viewport
        */
-      if (this.x < 108) { // Have the ship crossed the left border?
-          this.x = 108; // Go back to the left border
+      if (this.x < ct.room.xBoundE) { // Have the ship crossed the left border?
+          this.x = ct.room.xBoundE; // Go back to the left border
       }
-      if (this.x > 540) { // Have the ship crossed the right border?
-          this.x = 540; // Go back to the right border
+      if (this.x > ct.room.xBoundD) { // Have the ship crossed the right border?
+          this.x = ct.room.xBoundD; // Go back to the right border
       }
       if (this.y < 0) { // Have the ship crossed the left border?
           this.y = 0; // Go back to the left border
@@ -801,8 +803,9 @@ types:
       var hostile = ct.place.occupied(this, this.x, this.y, 'Hostile');
       if (hostile) {
           hostile.kill = true;
-          ct.room.lives --;
-          if (ct.room.lives <= 0) {
+          //ct.room.placar.lives --;
+          ct.rooms.list['Placar']['0'].lives --;
+          if (ct.rooms.list['Placar']['0'].lives <= 0) {
               this.kill = true;
                   window.setTimeout(function() {
                   ct.rooms.switch('Main');
@@ -813,8 +816,8 @@ types:
       var recover = ct.place.occupied(this, this.x, this.y, 'Recover');
       if (recover) {
           recover.kill = true;
-          if (ct.room.lives < 3) {
-              ct.room.lives ++;
+          if (ct.rooms.list['Placar']['0'].lives < 3) {
+              ct.rooms.list['Placar']['0'].lives ++;
           }
       }
     ondraw: ''
@@ -822,7 +825,7 @@ types:
     texture: 9a9fbd9c-e346-4bd0-97ce-08c623b39e8e
     extends: {}
     uid: e3f48b26-f02c-4e86-be89-a76093cb1867
-    lastmod: 1619903679140
+    lastmod: 1619915201905
   - name: naoSou
     depth: 0
     oncreate: |-
@@ -830,7 +833,7 @@ types:
       this.direction = 270;
       this.bulletTimer = 60;
       this.ctype = 'Hostile';
-    onstep: |-
+    onstep: |
       this.move();
 
       if (this.y > ct.viewHeight + 80) {
@@ -853,7 +856,7 @@ types:
     texture: 3ccbb6b0-1049-48a3-bb39-921a270d9217
     extends: {}
     uid: 802ab2b0-e829-4883-87d5-7834368c83c5
-    lastmod: 1619902092786
+    lastmod: 1619914632105
   - name: campbells
     depth: 0
     oncreate: |-
@@ -861,8 +864,8 @@ types:
       this.direction = 270;
       this.ctype = 'Recover';
 
-      this.scale.x = 0.3;
-      this.scale.y = 0.3;
+      this.scale.x = 0.25;
+      this.scale.y = 0.25;
     onstep: |
       this.move();
     ondraw: ''
@@ -870,14 +873,17 @@ types:
     texture: 0e12d6e2-1a87-4890-9334-75c0a74ca011
     extends: {}
     uid: a26e69f4-f33a-4cc9-b567-94cc2e4cf45a
-    lastmod: 1619904155862
+    lastmod: 1619914416295
   - name: meteor_ao
     depth: 0
-    oncreate: |-
+    oncreate: |
       this.speed = ct.random.range(1, 3);
       this.direction = ct.random.range(270 - 30, 270 + 30);
       this.depth = 1000;
       this.ctype = 'Hostile';
+
+      this.scale.x = 0.6;
+      this.scale.y = 0.6;
     onstep: |-
       this.move();
 
@@ -889,20 +895,23 @@ types:
       if (collided) {
           collided.kill = true;
           this.kill = true;
-          ct.room.score += 50;
+          ct.rooms.list['Placar']['0'].score += 50;
       }
     ondraw: ''
     ondestroy: ''
     texture: da1180b8-0eb6-46ee-8391-69af5e27081e
     extends: {}
     uid: 6ee12b9d-416d-43f7-8b69-6c9cfe994bc2
-    lastmod: 1619902056330
+    lastmod: 1619915074232
   - name: meteor_ao2
     depth: 0
     oncreate: |
       this.speed = ct.random.range(1, 3);
       this.direction = ct.random.range(270 - 30, 270 + 30);
       this.ctype = 'Hostile';
+
+      this.scale.x = 0.6;
+      this.scale.y = 0.6;
     onstep: |-
       this.move();
 
@@ -914,32 +923,31 @@ types:
       if (collided) {
           collided.kill = true;
           this.kill = true;
-          ct.room.score += 50;
+          ct.rooms.list['Placar']['0'].score += 50;
       }
     ondraw: ''
     ondestroy: ''
     texture: eaf087f2-e4f1-4fac-b95f-bb7ca94a0e01
     extends: {}
     uid: 09e13a7c-c3e1-45ed-9e07-f1831a174e6e
-    lastmod: 1619901857450
+    lastmod: 1619915103347
   - name: laser_az
     depth: 0
     oncreate: |-
       this.speed = 18;
       this.direction = 90;
-    onstep: |+
+    onstep: |
       if (this.y < -40) {
           this.kill = true;
       }
 
       this.move();
-
     ondraw: ''
     ondestroy: ''
     texture: 043c2f37-b00b-4142-9cf3-1464108ef47d
     extends: {}
     uid: 1eb8a988-17e6-4c64-af55-48251a11066a
-    lastmod: 1619902041130
+    lastmod: 1619914455423
   - name: laser_vm
     depth: 0
     oncreate: |-
@@ -997,7 +1005,7 @@ types:
       this.direction = 270;
       this.bulletTimer = 60;
       this.ctype = 'Hostile';
-    onstep: |+
+    onstep: |
       this.move();
 
       if (this.y > ct.viewHeight + 80) {
@@ -1008,7 +1016,7 @@ types:
       if (collided) {
           collided.kill = true;
           this.kill = true;
-          ct.room.score += 100;
+          ct.rooms.list['Placar']['0'].score += 100;
       }
 
       this.bulletTimer -= ct.delta;
@@ -1016,13 +1024,12 @@ types:
           this.bulletTimer = 180;
           ct.types.copy('laser_am', this.x, this.y + 32);
       }
-
     ondraw: ''
     ondestroy: ''
     texture: d4858864-d281-4995-b4d9-9625c1dba120
     extends: {}
     uid: c4b972ef-d6c6-4907-afc5-1f1d31036700
-    lastmod: 1619901967011
+    lastmod: 1619914869025
   - name: laser_am
     depth: 0
     oncreate: |-
@@ -1043,7 +1050,7 @@ types:
     texture: 142d21c7-b76b-4232-bade-8892ebb33db1
     extends: {}
     uid: ad9c0499-3489-44be-8783-497efe8929fa
-    lastmod: 1619902029994
+    lastmod: 1619914436271
   - name: alguem_fundo
     depth: 0
     oncreate: ''
@@ -1074,7 +1081,50 @@ types:
     extends: {}
     uid: fe626a25-ca2b-41b8-94a7-cb214d224b39
     lastmod: 1619901985418
-sounds: []
+sounds:
+  - name: spook kkkk (1)
+    uid: 3fd6b9bd-1fc1-46a4-840f-bcdfe3645348
+    isMusic: true
+    poolSize: 2
+    origname: s3fd6b9bd-1fc1-46a4-840f-bcdfe3645348.mp3
+    lastmod: 1619906472811
+  - name: Canção sem título (4)
+    uid: b03c8fb9-67c5-4784-82d4-4356d3ab5b2b
+    origname: sb03c8fb9-67c5-4784-82d4-4356d3ab5b2b.mp3
+    lastmod: 1619906491178
+    isMusic: true
+  - name: cut
+    uid: 6b2131e1-e4a9-4081-8811-41c1f88f2205
+    origname: s6b2131e1-e4a9-4081-8811-41c1f88f2205.mp3
+    lastmod: 1619906507324
+  - name: boomer
+    uid: 1474f63c-eccc-444a-aad7-6ab3f90f9786
+    origname: s1474f63c-eccc-444a-aad7-6ab3f90f9786.mp3
+    lastmod: 1619906740806
+  - name: piu
+    uid: 81e73b16-ab3b-44d2-9b93-0ff5a8841631
+    origname: s81e73b16-ab3b-44d2-9b93-0ff5a8841631.mp3
+    lastmod: 1619906763015
+  - name: pow
+    uid: 37c2495e-518b-4014-b056-4b54fed7b480
+    origname: s37c2495e-518b-4014-b056-4b54fed7b480.mp3
+    lastmod: 1619906778791
+  - name: tan
+    uid: a3500ff9-394e-4283-b409-2c990f1d5854
+    origname: sa3500ff9-394e-4283-b409-2c990f1d5854.mp3
+    lastmod: 1619906786444
+  - name: tututu
+    uid: 54d93bff-d98d-4ec9-bed4-a4fb8d6d5618
+    origname: s54d93bff-d98d-4ec9-bed4-a4fb8d6d5618.mp3
+    lastmod: 1619906794383
+  - name: vium
+    uid: 6374e36c-38c4-4776-b31c-d46df10ff9ee
+    origname: s6374e36c-38c4-4776-b31c-d46df10ff9ee.mp3
+    lastmod: 1619906805152
+  - name: vush
+    uid: 814c6b01-a660-4da3-9107-5b903a898dbb
+    origname: s814c6b01-a660-4da3-9107-5b903a898dbb.mp3
+    lastmod: 1619906809462
 styles:
   - name: ScoreText
     uid: 077f4198-041a-4078-92b1-0fdc4ba7a225
@@ -1091,68 +1141,34 @@ styles:
       color: '#FFFFFF'
 rooms:
   - name: Main
-    oncreate: >-
-      var placar = ct.rooms.list[1];
-
+    oncreate: |
       ct.rooms.append('Placar');
 
+      this.xBoundE = 108;
+      this.xBoundD = 540;
 
       this.asteroidTimer = 20;
-
       this.enemyTimer = 180;
-
       this.itemTimer = 180;
-
-      this.score = 0;
-
-      this.lives = 3;
-
-
-      this.scoreLabel = new PIXI.Text('Score: ' + this.score);
-
-      this.scoreLabel = new PIXI.Text('Score: ' + this.score,
-      ct.styles.get('ScoreText'));
-
-      this.addChild(this.scoreLabel);
-
-      this.scoreLabel.x = 580;
-
-      this.scoreLabel.y = 30;
-
-      this.scoreLabel.depth = 1000;
-
-
-      this.livesLabel = new PIXI.Text('Lives: ' + this.lives,
-      ct.styles.get('ScoreText'));
-
-      this.addChild(this.livesLabel);
-
-      this.livesLabel.x = 580;
-
-      this.livesLabel.y = 60;
-
-      this.livesLabel.depth = 1000;
     onstep: |-
       this.asteroidTimer -= ct.delta;
       if (this.asteroidTimer <= 0) {
           this.asteroidTimer = ct.random.range(20, 200);
-          ct.types.copy(ct.random.dice('meteor_ao', 'meteor_ao2'), ct.random(540), -100);
+          ct.types.copy(ct.random.dice('meteor_ao', 'meteor_ao2'), ct.random(this.xBoundD), -this.xBoundE);
       }
 
       this.enemyTimer -= ct.delta;
       if (this.enemyTimer <= 0) {
           this.enemyTimer = ct.random.range(180, 400);
-          ct.types.copy('vacaborgue', ct.random(540), -100);
+          ct.types.copy('vacaborgue', ct.random(this.xBoundD), -this.xBoundE);
       }
 
       this.itemTimer -= ct.delta;
-      if (this.itemTimer <= 0 && this.lives == 3) {
+      if (this.itemTimer <= 0 && ct.rooms.list['Placar']['0'].lives < 3) {
           this.itemTimer = ct.random.range(180, 400);
-          ct.types.copy('campbells', ct.random(540), -100);
+          ct.types.copy('campbells', ct.random(this.xBoundD), -this.xBoundE);
       }
-    ondraw: |-
-      this.scoreLabel.text = 'Score: ' + this.score;
-      this.livesLabel.text = 'Lives: ' + this.lives;
+    ondraw: ''
     onleave: ''
     width: 800
     height: 600
@@ -1174,7 +1190,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1619904436351
+    lastmod: 1619914731664
   - name: Placar
     oncreate: >-
       this.score = 0;
@@ -1285,7 +1301,7 @@ rooms:
       isUi: true
     gridX: 64
     gridY: 64
-    lastmod: 1619904443749
+    lastmod: 1619914754144
 actions:
   - name: MoveX
     methods:
