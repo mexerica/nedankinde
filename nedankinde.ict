@@ -887,14 +887,15 @@ types:
       this.bulletTimer -= ct.delta;
       if (this.bulletTimer <= 0) {
           this.bulletTimer = 60;
-          var quinaifeC = ct.types.copy('quinaife', this.x, this.y - 32);
-          quinaifeC.direction = 90;
-          var quinaifeB = ct.types.copy('quinaife', this.x, this.y + 32);
-          quinaifeB.direction = 270;
-          var quinaifeE = ct.types.copy('quinaife', this.x - 32, this.y);
-          quinaifeE.direction = 180;
-          var quinaifeD = ct.types.copy('quinaife', this.x + 32, this.y);
-          quinaifeD.direction = 360;
+          ct.types.copy('quinaife', this.x, this.y - 32)
+              .direction = 90;
+          ct.types.copy('quinaife', this.x, this.y + 32)
+              .direction = 270;
+          ct.types.copy('quinaife', this.x - 32, this.y)
+              .direction = 180;
+          ct.types.copy('quinaife', this.x + 32, this.y)
+              .direction = 360;
+          ct.sound.spawn('vium')
       }
     ondraw: ''
     ondestroy: |
@@ -906,7 +907,7 @@ types:
     texture: 3ccbb6b0-1049-48a3-bb39-921a270d9217
     extends: {}
     uid: 802ab2b0-e829-4883-87d5-7834368c83c5
-    lastmod: 1619968374609
+    lastmod: 1619974364930
   - name: campbells
     depth: 0
     oncreate: |-
@@ -928,9 +929,10 @@ types:
     depth: 0
     oncreate: |
       this.speed = ct.random.range(3, 6);
-      this.direction = ct.random.range(270 - 30, 270 + 30);
-      this.depth = 1000;
+
       this.ctype = 'Hostile';
+      this.depth = 1000;
+      this.direction = ct.random.range(270 - 30, 270 + 30);
 
       this.scale.x = 0.6;
       this.scale.y = 0.6;
@@ -952,13 +954,15 @@ types:
     texture: da1180b8-0eb6-46ee-8391-69af5e27081e
     extends: {}
     uid: 6ee12b9d-416d-43f7-8b69-6c9cfe994bc2
-    lastmod: 1619968681129
+    lastmod: 1619971943865
   - name: meteor_ao2
     depth: 0
     oncreate: |
       this.speed = ct.random.range(3, 6);
-      this.direction = ct.random.range(270 - 30, 270 + 30);
+
       this.ctype = 'Hostile';
+      this.depth = 1000;
+      this.direction = ct.random.range(270 - 30, 270 + 30);
 
       this.scale.x = 0.6;
       this.scale.y = 0.6;
@@ -980,7 +984,7 @@ types:
     texture: eaf087f2-e4f1-4fac-b95f-bb7ca94a0e01
     extends: {}
     uid: 09e13a7c-c3e1-45ed-9e07-f1831a174e6e
-    lastmod: 1619968686392
+    lastmod: 1619971952002
   - name: laser_az
     depth: 0
     oncreate: |-
@@ -1085,9 +1089,13 @@ types:
       this.bulletTimer -= ct.delta;
       if (this.bulletTimer <= 0) {
           this.bulletTimer = 120;
-          ct.types.copy('laser_am', this.x, this.y + 32).direction = 225;
-          ct.types.copy('laser_am', this.x, this.y + 32).direction = 270;
-          ct.types.copy('laser_am', this.x, this.y + 32).direction = 315;
+          ct.types.copy('laser_am', this.x, this.y + 32)
+              .direction = 225;
+          ct.types.copy('laser_am', this.x, this.y + 32)
+              .direction = 270;
+          ct.types.copy('laser_am', this.x, this.y + 32)
+              .direction = 315;
+          ct.sound.spawn('piu')
       }
     ondraw: ''
     ondestroy: |
@@ -1102,10 +1110,13 @@ types:
     lastmod: 1619969323944
   - name: laser_am
     depth: 0
-    oncreate: |-
+    oncreate: |
       this.speed = 5;
       this.rotation = ct.random.deg();
       this.ctype = 'Hostile';
+
+      this.scale.x = 0.7;
+      this.scale.y = 0.7;
     onstep: |-
       if (this.y < -40) {
           this.kill = true;
@@ -1116,10 +1127,10 @@ types:
       this.rotation += 4 * ct.delta;
     ondraw: ''
     ondestroy: ''
-    texture: 142d21c7-b76b-4232-bade-8892ebb33db1
+    texture: e6aef562-0ea6-48e7-a2c4-330e049dd4a3
     extends: {}
     uid: ad9c0499-3489-44be-8783-497efe8929fa
-    lastmod: 1619966916863
+    lastmod: 1619974182043
   - name: alguem_fundo
     depth: 0
     oncreate: ''
@@ -1183,17 +1194,6 @@ types:
     extends: {}
     uid: a5a1d4e7-9339-4902-95f3-88074c70fef9
 sounds:
-  - name: spook kkkk (1)
-    uid: 3fd6b9bd-1fc1-46a4-840f-bcdfe3645348
-    isMusic: true
-    poolSize: 2
-    origname: s3fd6b9bd-1fc1-46a4-840f-bcdfe3645348.mp3
-    lastmod: 1619906472811
-  - name: Canção sem título (4)
-    uid: b03c8fb9-67c5-4784-82d4-4356d3ab5b2b
-    origname: sb03c8fb9-67c5-4784-82d4-4356d3ab5b2b.mp3
-    lastmod: 1619906491178
-    isMusic: true
   - name: cut
     uid: 6b2131e1-e4a9-4081-8811-41c1f88f2205
     origname: s6b2131e1-e4a9-4081-8811-41c1f88f2205.mp3
@@ -1257,7 +1257,7 @@ rooms:
       this.asteroidTimer -= ct.delta;
       if (this.asteroidTimer <= 0) {
           this.asteroidTimer = ct.random.range(20, 60);
-          ct.types.copy(ct.random.dice('meteor_ao', 'meteor_ao2'), ct.random(this.xBoundD), -50);
+          ct.types.copy(ct.random.dice('meteor_ao', 'meteor_ao2'), ct.random.range(-128, 640), -64)
       }
 
       this.enemyTimer -= ct.delta;
@@ -1307,7 +1307,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1619968863768
+    lastmod: 1619974556877
   - name: Placar
     oncreate: >-
       this.score = 0;
@@ -1416,12 +1416,12 @@ rooms:
       isUi: true
     gridX: 64
     gridY: 64
-    lastmod: 1619968924384
+    lastmod: 1619972096273
   - name: Titulo
-    oncreate: |+
-
+    oncreate: ''
     onstep: |
       if (ct.actions.Shoot.pressed) {
+          ct.sound.spawn('tan')
           ct.rooms.switch('Main');
       }
     ondraw: ''
@@ -1447,7 +1447,7 @@ rooms:
     extends: {}
     gridX: 64
     gridY: 64
-    lastmod: 1619966805176
+    lastmod: 1619974917578
 actions:
   - name: MoveX
     methods:
