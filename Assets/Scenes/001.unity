@@ -276,6 +276,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 943eba07679ee224ab6d4fd807728711, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -17329448, guid: 9848c41e8b996654489923a99b7b84b0, type: 3}
+  - {fileID: 1344307720, guid: 9848c41e8b996654489923a99b7b84b0, type: 3}
+  - {fileID: 1086961504, guid: 9848c41e8b996654489923a99b7b84b0, type: 3}
   velocidade: 4
 --- !u!1 &377257197
 GameObject:
