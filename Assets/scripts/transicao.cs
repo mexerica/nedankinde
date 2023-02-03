@@ -10,7 +10,7 @@ public class transicao : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Z))
-            SceneManager.LoadScene(proximaCena);
+        if (Input.GetKeyDown(KeyCode.Z)) SceneManager.LoadScene(proximaCena);
+        else if (Input.GetKeyDown(KeyCode.X)) SceneManager.LoadScene("002");
     }
 }
