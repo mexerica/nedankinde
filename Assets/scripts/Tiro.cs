@@ -3,12 +3,14 @@ using UnityEngine;
 public class Tiro : MonoBehaviour {
 
     [Range(0, .5f)][SerializeField] private float velocidade = .3f;
+
+    [SerializeField] private Vector3 direcao;
     
     void Start() {
     }
 
     void Update() {
-        transform.Translate(Vector3.up * (Time.deltaTime / velocidade), Space.World);
+        transform.Translate(direcao * (Time.deltaTime / velocidade), Space.World);
         if (isForaDaTela()) Destroy(gameObject);
     }
 

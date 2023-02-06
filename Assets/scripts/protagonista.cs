@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,8 +6,10 @@ public class protagonista : MonoBehaviour {
     private Rigidbody2D body;
     private SpriteRenderer imagem;
 
-    float horizontal;
-    float vertical;
+    private float horizontal;
+    private float vertical;
+
+    private bool isAtirando = false;
 
     [SerializeField] private List<Sprite> sprites;
 
@@ -20,14 +21,21 @@ public class protagonista : MonoBehaviour {
         imagem.sprite = sprites[0];
     }
 
-    private void FixedUpdate() {  
-        body.velocity = new Vector2(horizontal * velocidade, vertical * velocidade);
+    private void FixedUpdate() {
+        body.velocity = new Vector2(
+            horizontal * ((isAtirando) ? velocidade/2 :velocidade),
+            vertical * ((isAtirando) ? velocidade/2 :velocidade)
+        );
         imagem.sprite = sprites[(horizontal == 0) ? 0 : 1];
         imagem.flipX = horizontal == 1;
     }
 
     void Update() {
         horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical"); 
+        vertical = Input.GetAxisRaw("Vertical");
+
+        isAtirando = Input.GetButton("Fire1");
+        GetComponent<Atirador>().deveAtirar = isAtirando;
+        
     }
 }

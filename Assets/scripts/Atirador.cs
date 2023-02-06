@@ -4,9 +4,11 @@ public class Atirador : MonoBehaviour {
 
     private float timer;
 
+    public bool deveAtirar = false;
+
     [SerializeField] private GameObject tiro;
 
-    [Range(0, 2.0f)][SerializeField] private float intervalo = 0.5f;
+    [Range(0, 1.0f)][SerializeField] private float intervalo = 0.3f;
 
     void Start() {
         timer = 0;
@@ -14,7 +16,8 @@ public class Atirador : MonoBehaviour {
 
     void Update() {
         timer += Time.deltaTime;
-        Spawn();
+        if (deveAtirar)
+            Spawn();
     }
 
     private void Spawn() {
