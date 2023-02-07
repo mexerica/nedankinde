@@ -6,6 +6,8 @@ public class protagonista : MonoBehaviour {
     private Rigidbody2D body;
     private SpriteRenderer imagem;
 
+    private SpriteRenderer foco;
+
     private float horizontal;
     private float vertical;
 
@@ -19,6 +21,8 @@ public class protagonista : MonoBehaviour {
         body = GetComponent<Rigidbody2D>(); 
         imagem = GetComponent<SpriteRenderer>();
         imagem.sprite = sprites[0];
+
+        foco = transform.GetChild(0).GetComponent<SpriteRenderer>();
     }
 
     private void FixedUpdate() {
@@ -26,6 +30,7 @@ public class protagonista : MonoBehaviour {
             horizontal * ((isAtirando) ? velocidade/2 :velocidade),
             vertical * ((isAtirando) ? velocidade/2 :velocidade)
         );
+        foco.enabled = isAtirando;
         imagem.sprite = sprites[(horizontal == 0) ? 0 : 1];
         imagem.flipX = horizontal == 1;
     }
