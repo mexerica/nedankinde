@@ -381,8 +381,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deveAtirar: 0
+  deveEspecial: 0
   tiro: {fileID: 6019458243625041162, guid: 19899818f407a084883646fc9117f57a, type: 3}
+  especial: {fileID: 9108681573844803472, guid: 3037db2b1e0fbf349b16ebff82ba2f7d, type: 3}
   intervalo: 0.1
+  intervaloEspecial: 3
 --- !u!114 &354543857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,6 +399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 4
+  especial: 2
 --- !u!1 &377257197
 GameObject:
   m_ObjectHideFlags: 0

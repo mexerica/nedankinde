@@ -17,6 +17,7 @@ public class menu : MonoBehaviour {
     }
 
     void Update() {
-        contadorVidas.sprite = numeros[protagonista.GetComponent<Vida>().vida];
+        contadorVidas.sprite = numeros[protagonista.GetComponent<Stats>().vida];
+        contadorEspecial.sprite = numeros[protagonista.GetComponent<Stats>().especial];
     }
 }

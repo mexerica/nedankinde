@@ -41,6 +41,6 @@ public class protagonista : MonoBehaviour {
 
         isAtirando = Input.GetButton("Fire1");
         GetComponent<Atirador>().deveAtirar = isAtirando;
-        
+        GetComponent<Atirador>().deveEspecial = Input.GetButton("Fire2");
     }
 }
