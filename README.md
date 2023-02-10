@@ -6,7 +6,7 @@ Pra jogar é só entrar no [link do projeto](https://mexerica.itch.io/nedankinde
 
 ![Nedankinde](/nedankinde/img/alguem_fundo.png)
 
-Pra editar o jogo baixe todos os arquivos e abra o [`nedankinde.ict`](/nedankinde.ict) no [CT.js](https://docs.ctjs.rocks/).
+Pra editar o jogo no CT.js baixe todos os arquivos e abra o [`nedankinde.ict`](/nedankinde.ict) no [CT.js](https://docs.ctjs.rocks/).
 
 Programação, enredo e sons: [Tiago](https://github.com/mexerica)
 

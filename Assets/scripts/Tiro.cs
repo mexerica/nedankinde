@@ -11,7 +11,8 @@ public class Tiro : MonoBehaviour {
 
     void Update() {
         transform.Translate(direcao * (Time.deltaTime / velocidade), Space.World);
-        if (isForaDaTela()) Destroy(gameObject);
+        if (isForaDaTela())
+            Destroy(gameObject);
     }
 
     private bool isForaDaTela() {
@@ -20,4 +21,5 @@ public class Tiro : MonoBehaviour {
             || transform.position.y > 4.0f
             || transform.position.y < -4.0f;
     }
+
 }
