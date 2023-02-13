@@ -13,3 +13,12 @@ Programação, enredo e sons: [Tiago](https://github.com/mexerica)
 Programação e arte: [Ricardo](https://github.com/sleiph)
 
 ![quinaife](/nedankinde/img/quinaife.png)
+
+
+### Fazer
+
+- adicionar um pouco mais de física nos tiros (se atira indo pra esquerda, o tiro vai meio pra esquerda)
+- fica invulneravel depois de levar um tiro
+- recupera os boomerangs se pegar de volta
+- sons
+- todo o resto

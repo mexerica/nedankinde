@@ -140,6 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 6
   especial: 0
+  isVilao: 1
 --- !u!114 &2293174722096917817
 MonoBehaviour:
   m_ObjectHideFlags: 0

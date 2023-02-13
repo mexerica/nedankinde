@@ -405,6 +405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 4
   especial: 2
+  isVilao: 0
 --- !u!1 &377257197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,7 +1202,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2293174722096917762, guid: 5fedb0a8a8133554db6e19f57bf18919, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2293174722096917762, guid: 5fedb0a8a8133554db6e19f57bf18919, type: 3}
       propertyPath: m_LocalPosition.y

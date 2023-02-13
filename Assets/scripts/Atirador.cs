@@ -28,9 +28,14 @@ public class Atirador : MonoBehaviour {
             Atirar(tiro);
             timer = 0;
         }
-        if (deveEspecial && timerEspecial >= intervaloEspecial) {
+        if (
+            deveEspecial &&
+            timerEspecial >= intervaloEspecial &&
+            GetComponent<Stats>().especial > 0
+        ) {
             Atirar(especial);
             timerEspecial = 0;
+            GetComponent<Stats>().especial --;
         }
     }
 

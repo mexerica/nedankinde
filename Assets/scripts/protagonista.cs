@@ -44,10 +44,4 @@ public class protagonista : MonoBehaviour {
         GetComponent<Atirador>().deveEspecial = Input.GetButton("Fire2");
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == "TiroRuim") {
-            GetComponent<Stats>().vida -= 1;
-        }
-    }
-
 }
