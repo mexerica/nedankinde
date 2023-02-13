@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3888300468520028728}
   - component: {fileID: 6647884912389253308}
   - component: {fileID: 1402129801393593148}
-  - component: {fileID: 7584920862062341834}
+  - component: {fileID: 4444531583012513067}
   m_Layer: 0
   m_Name: tiro_ciclope
   m_TagString: TiroRuim
@@ -102,7 +102,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.3
---- !u!114 &7584920862062341834
+--- !u!114 &4444531583012513067
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,11 +111,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7020676635995682927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a090e1510527c264cad76136e73168ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d80402e02a9dbc4ead5106debccec6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  direcao: {x: 0, y: -1, z: 0}
   velocidade: 0.3
   dano: 1
-  direcao: {x: 0, y: -1, z: 0}
   rotacao: 0
-  isBoomerang: 0

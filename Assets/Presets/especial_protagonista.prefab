@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2328256015230463794}
   - component: {fileID: 2838913381296821518}
   - component: {fileID: 421708018121918787}
-  - component: {fileID: 4809369674949335488}
+  - component: {fileID: 5196466334545832293}
   m_Layer: 0
   m_Name: especial_protagonista
   m_TagString: TiroBom
@@ -119,7 +119,7 @@ PolygonCollider2D:
       - {x: 0.24734284, y: -0.30251428}
       - {x: 0.27357143, y: 0.11659992}
       - {x: 0.24814284, y: 0.21819998}
---- !u!114 &4809369674949335488
+--- !u!114 &5196466334545832293
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,11 +128,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 9108681573844803472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a090e1510527c264cad76136e73168ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 8178a109e28dbd44e9a0979e5a9a6233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  direcao: {x: 0, y: 1, z: 0}
   velocidade: 0.3
   dano: 5
-  direcao: {x: 0, y: 1, z: 0}
   rotacao: 2
-  isBoomerang: 1
+  isVoltando: 0

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4927524109398383097}
   - component: {fileID: 3358882434653417876}
   - component: {fileID: 7191889034698188712}
+  - component: {fileID: 5043605034822063443}
   m_Layer: 0
   m_Name: tiro_protagonista
   m_TagString: TiroBom
@@ -138,8 +139,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a090e1510527c264cad76136e73168ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  direcao: {x: 0, y: 1, z: 0}
   velocidade: 0.15
   dano: 1
-  direcao: {x: 0, y: 1, z: 0}
   rotacao: 1
-  isBoomerang: 0
+--- !u!114 &5043605034822063443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6019458243625041162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d80402e02a9dbc4ead5106debccec6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  direcao: {x: 0, y: 1, z: 0}
+  velocidade: 0.15
+  dano: 1
+  rotacao: 1

@@ -22,7 +22,7 @@ public class protagonista : MonoBehaviour {
         imagem = GetComponent<SpriteRenderer>();
         imagem.sprite = sprites[0];
 
-        foco = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        foco = transform.GetChild(1).GetComponent<SpriteRenderer>();
     }
 
     private void FixedUpdate() {
@@ -40,8 +40,16 @@ public class protagonista : MonoBehaviour {
         vertical = Input.GetAxisRaw("Vertical");
 
         isAtirando = Input.GetButton("Fire1");
-        GetComponent<Atirador>().deveAtirar = isAtirando;
-        GetComponent<Atirador>().deveEspecial = Input.GetButton("Fire2");
+        GetComponentInChildren<Atirador>().deveAtirar = isAtirando;
+        GetComponentInChildren<Atirador>().deveEspecial = Input.GetButton("Fire2");
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+        Boomerang script = collision.GetComponent<Boomerang>();
+        if (script != null && script.isVoltando) {
+            GetComponent<Stats>().especial ++;
+            Destroy(collision.gameObject);
+        }
     }
 
 }

@@ -7,10 +7,10 @@ public class Stats : MonoBehaviour {
 
     [SerializeField] private bool isVilao;
 
-    private string dano;
+    private string tipoInimigo;
 
     void Start() {
-        dano = (isVilao ? "TiroBom" : "TiroRuim");
+        tipoInimigo = (isVilao ? "TiroBom" : "TiroRuim");
     }
 
     void Update() {
@@ -19,8 +19,8 @@ public class Stats : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == dano) {
-            GetComponent<Stats>().vida -= collision.GetComponent<Tiro>().dano;
+        if (collision.gameObject.tag == tipoInimigo) {
+            vida -= collision.GetComponent<Tiro>().dano;
         }
     }
     
