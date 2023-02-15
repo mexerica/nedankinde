@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Atirador : MonoBehaviour {
 
+    AudioSource audioSource;
+    private AudioClip clip;
+
     private float timer;
 
     private float timerEspecial;
@@ -10,6 +13,8 @@ public class Atirador : MonoBehaviour {
 
     public bool deveEspecial = false;
 
+    [SerializeField] private AudioClip cliptiro;
+    [SerializeField] private AudioClip clipespecial;
     [SerializeField] private GameObject tiro;
     [SerializeField] private GameObject especial;
 
@@ -19,12 +24,15 @@ public class Atirador : MonoBehaviour {
     void Start() {
         timer = 0;
         timerEspecial = 0;
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null) audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     void Update() {
         timer += Time.deltaTime;
         timerEspecial += Time.deltaTime;
         if (deveAtirar && timer >= intervalo) {
+            clip = cliptiro;
             Atirar(tiro);
             timer = 0;
         }
@@ -33,6 +41,7 @@ public class Atirador : MonoBehaviour {
             timerEspecial >= intervaloEspecial &&
             GetComponentInParent<Stats>().especial > 0
         ) {
+            clip = clipespecial;
             Atirar(especial);
             timerEspecial = 0;
             GetComponentInParent<Stats>().especial --;
@@ -40,6 +49,7 @@ public class Atirador : MonoBehaviour {
     }
 
     private GameObject Atirar(GameObject proj) {
+        audioSource.PlayOneShot(clip, 0.5f);
         return Instantiate(
             proj,
             new Vector3(transform.position.x, transform.position.y, 0),
