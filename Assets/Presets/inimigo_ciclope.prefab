@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 2293174722096917764}
   - component: {fileID: 2293174722096917767}
   - component: {fileID: 2293174722096917766}
-  - component: {fileID: 2293174722096917763}
-  m_Layer: 0
+  - component: {fileID: 1388047956062495088}
+  m_Layer: 7
   m_Name: inimigo_ciclope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -651163031
+  m_SortingLayer: 1
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 9ae9ff051e84ced45b470cea1909dc00, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -141,7 +141,7 @@ MonoBehaviour:
   vida: 6
   especial: 0
   isVilao: 1
---- !u!114 &2293174722096917763
+--- !u!114 &1388047956062495088
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,9 +150,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2293174722096917816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bb80d96d2a39ab4695a183a26ab9cfd, type: 3}
+  m_Script: {fileID: 11500000, guid: 641b44b69d9678148a0acf40f2324927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidade: 1.8
 --- !u!1 &4083441225027769572
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,7 +164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2830129731890869567}
   - component: {fileID: 2815028165927054111}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: atirador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,5 +202,5 @@ MonoBehaviour:
   deveEspecial: 0
   tiro: {fileID: 7020676635995682927, guid: b748e61875c64af4cb254b5175a37060, type: 3}
   especial: {fileID: 0}
-  intervalo: 0.4
+  intervalo: 0.85
   intervaloEspecial: 3

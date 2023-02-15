@@ -13,7 +13,7 @@ public class Atirador : MonoBehaviour {
     [SerializeField] private GameObject tiro;
     [SerializeField] private GameObject especial;
 
-    [Range(0, 1.0f)][SerializeField] private float intervalo = 0.3f;
+    [Range(0, 2.0f)][SerializeField] private float intervalo = 0.3f;
     [Range(0, 10.0f)][SerializeField] private float intervaloEspecial = 3f;
 
     void Start() {

@@ -20,5 +20,7 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
 - adicionar um pouco mais de física nos tiros (se atira indo pra esquerda, o tiro vai meio pra esquerda)
 - fica invulneravel depois de levar um tiro
 - recupera os boomerangs se pegar de volta
+- novos e melhores padrões de movimento dos inimigos
 - sons
+- animacao
 - todo o resto
