@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DesceSimples : MonoBehaviour {
+public class DesceSimples : inimigo {
 
     private Rigidbody2D body;
 
@@ -15,6 +15,7 @@ public class DesceSimples : MonoBehaviour {
     }
 
     void Update() {
-        
+        if (isForaDaTela())
+            Destroy(gameObject);
     }
 }

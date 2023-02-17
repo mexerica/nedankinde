@@ -17,10 +17,13 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
 
 ### Fazer
 
+-adicionar um deslocamento entre os inimigos da wave, pra não ficar uma fila perfeita de otários
 - adicionar um pouco mais de física nos tiros (se atira indo pra esquerda, o tiro vai meio pra esquerda)
 - fica invulneravel depois de levar um tiro
-- recupera os boomerangs se pegar de volta
 - novos e melhores padrões de movimento dos inimigos
+- waves de inimigos
+- um boss
+- diálogos entre as waves
 - sons
 - animacao
 - todo o resto
