@@ -1,12 +1,11 @@
 using UnityEngine;
 
+/// <summary>
+/// Tiro que vai até o limite superior da tela e volta em linha reta
+/// </summary>
 public class Boomerang : Tiro {
 
     public bool isVoltando = false;
-
-    void Start() {
-        
-    }
 
     void Update() {
         if (isForaDaTela())

@@ -1,10 +1,9 @@
 using UnityEngine;
 
+/// <summary>
+/// Tiro que vai em linha reta na direção especificada no atributo direcao
+/// </summary>
 public class Simples : Tiro {
-
-    void Start() {
-        
-    }
 
     void Update() {
         if (isForaDaTela())

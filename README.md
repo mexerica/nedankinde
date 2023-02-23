@@ -17,13 +17,22 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
 
 ### Fazer
 
--adicionar um deslocamento entre os inimigos da wave, pra não ficar uma fila perfeita de otários
-- adicionar um pouco mais de física nos tiros (se atira indo pra esquerda, o tiro vai meio pra esquerda)
-- fica invulneravel depois de levar um tiro
-- novos e melhores padrões de movimento dos inimigos
-- waves de inimigos
-- um boss
-- diálogos entre as waves
-- sons
-- animacao
-- todo o resto
+#### Game Design
+
+* diálogos entre as waves
+* modo truzão, que vc tenta controlar uma bola com seus tiros [東方靈異伝](https://www.youtube.com/watch?v=w3YmmdgcHb8)
+* protagonista
+    - fica invulneravel depois de levar um tiro
+* inimigos
+    - novos e melhores padrões de movimento dos inimigos
+    - adicionar um deslocamento entre os inimigos da wave, pra não ficar uma fila perfeita de otários
+* bosses
+    - tudo
+* tiros
+    - adicionar um pouco mais de física nos tiros (se atira indo pra esquerda, o tiro vai meio pra esquerda)
+    - o tiro é destruido no impacto
+
+#### Aparencia
+* animação/som do player sendo atingido
+* um fundo um pouco mais dinâmico
+* todo o resto

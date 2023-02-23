@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1388047956062495088}
   m_Layer: 7
   m_Name: inimigo_ciclope
-  m_TagString: Untagged
+  m_TagString: Ruim
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 641b44b69d9678148a0acf40f2324927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 1.8
+  velocidade: 3
 --- !u!1 &4083441225027769572
 GameObject:
   m_ObjectHideFlags: 0
