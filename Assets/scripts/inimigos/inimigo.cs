@@ -2,13 +2,9 @@ using UnityEngine;
 
 public class inimigo : MonoBehaviour {
 
-    void Start() {
-        
-    }
+    [Range(0, 5f)][SerializeField] protected float velocidade = 1f;
 
-    void Update() {
-        
-    }
+    protected Rigidbody2D body;
 
     protected bool isForaDaTela() {
         return transform.position.x > 5.0f

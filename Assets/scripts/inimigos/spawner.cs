@@ -45,7 +45,7 @@ public class spawner : MonoBehaviour {
     }
 
     private GameObject Spawn() {
-        Vector3 posRelativa = new Vector3(waveAtual.posicao.x-1.3f, waveAtual.posicao.y, waveAtual.posicao.z);
+        Vector3 posRelativa = waveAtual.posicao;
         return Instantiate(waveAtual.inimigo, posRelativa, Quaternion.identity);
     }
 }

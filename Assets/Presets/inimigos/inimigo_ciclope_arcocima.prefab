@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 2293174722096917764}
   - component: {fileID: 2293174722096917767}
   - component: {fileID: 2293174722096917766}
-  - component: {fileID: 1388047956062495088}
+  - component: {fileID: 6925939777119521115}
   m_Layer: 7
-  m_Name: inimigo_ciclope
+  m_Name: inimigo_ciclope_arcocima
   m_TagString: Ruim
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138,10 +138,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938890c63e2dd5a4485312d5cff11421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 6
+  vida: 1
   especial: 0
   isVilao: 1
---- !u!114 &1388047956062495088
+--- !u!114 &6925939777119521115
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,10 +150,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2293174722096917816}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 641b44b69d9678148a0acf40f2324927, type: 3}
+  m_Script: {fileID: 11500000, guid: e14b2bd9a9088d244ace4ae728caa7d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 3
+  velocidade: 1
+  posControle: {x: -1.3, y: -2.5, z: 0}
 --- !u!1 &4083441225027769572
 GameObject:
   m_ObjectHideFlags: 0

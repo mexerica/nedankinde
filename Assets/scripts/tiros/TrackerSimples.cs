@@ -13,7 +13,6 @@ public class TrackerSimples : Tiro {
         GameObject maisProximo = AcharInimigoMaisProximo(tipoInimigo);
         if (maisProximo != null) {
             direcao = (maisProximo.transform.position - transform.position).normalized;
-            Debug.Log(direcao);
         }
     }
 

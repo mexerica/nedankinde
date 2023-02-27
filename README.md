@@ -1,6 +1,6 @@
 # Nedankinde ✂
 
-Jogo criado pra [Paint Jam](https://itch.io/jam/paint-jam-2021), o jogo foi desenvolvido em javascript, com o CT.js, cuspe e MS Paint.
+Jogo criado pra [Paint Jam](https://itch.io/jam/paint-jam-2021), o jogo foi desenvolvido em javascript, com o CT.js, cuspe e MS Paint, baseado no [Touhou 10 - Mountain of Faith](https://www.youtube.com/watch?v=ygM1rqNMGBo).
 
 Pra jogar é só entrar no [link do projeto](https://mexerica.itch.io/nedankinde) no Itch.io.
 
@@ -26,11 +26,13 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
 * inimigos
     - novos e melhores padrões de movimento dos inimigos
     - adicionar um deslocamento entre os inimigos da wave, pra não ficar uma fila perfeita de otários
+    - várias cores do mesmo inimigo pra render mais, cada um atira de um jeito, sei lá.
 * bosses
     - tudo
 * tiros
     - adicionar um pouco mais de física nos tiros (se atira indo pra esquerda, o tiro vai meio pra esquerda)
     - o tiro é destruido no impacto
+    - velocidade de alguns tiros varia
 
 #### Aparencia
 * animação/som do player sendo atingido
