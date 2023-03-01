@@ -3,7 +3,7 @@ using UnityEngine;
 /// <summary>
 /// Tiro que pega a posicao do inimigo mais próximo quando é criado e vai naquela direção sem corrigir percurso
 /// </summary>
-public class TrackerSimples : Tiro {
+public class TiroTrackerSimples : Tiro {
 
     private string tipoInimigo;
 

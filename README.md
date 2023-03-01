@@ -27,14 +27,18 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
     - novos e melhores padrões de movimento dos inimigos
     - adicionar um deslocamento entre os inimigos da wave, pra não ficar uma fila perfeita de otários
     - várias cores do mesmo inimigo pra render mais, cada um atira de um jeito, sei lá.
+    - aleatoriedade no padrao de movimento
 * bosses
     - tudo
 * tiros
     - adicionar um pouco mais de física nos tiros (se atira indo pra esquerda, o tiro vai meio pra esquerda)
     - o tiro é destruido no impacto
     - velocidade de alguns tiros varia
+    - aleatoriedade na direcao de alguns tiros dos inimigos
 
 #### Aparencia
+* escrever 'Score' na interface
+* usar o array de numeros pra exibir valores maiores q 9
 * animação/som do player sendo atingido
 * um fundo um pouco mais dinâmico
 * todo o resto

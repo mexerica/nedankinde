@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// O inimigo faz um arco pra baixo a partir da posicao inicial
+/// </summary>
 public class ArcoCima : inimigo {
 
     private Vector3 posInicial;
@@ -13,7 +16,6 @@ public class ArcoCima : inimigo {
     void Start() {
         posInicial = transform.position;
         posFinal = new Vector3(transform.position.x*(-1), transform.position.y, 0);
-        //posControle = posInicial +(posFinal - posInicial)/2 + Vector3.up *5.0f;
     }
 
     void Update() {
@@ -23,13 +25,12 @@ public class ArcoCima : inimigo {
         if (transform.position.Equals(posFinal))
             Destroy(gameObject);
 
-        if (cont < velocidade) {
+        if (cont < velocidade)
             cont += velocidade *Time.deltaTime;
 
         Vector3 m1 = Vector3.Lerp( posInicial, posControle, cont );
         Vector3 m2 = Vector3.Lerp( posControle, posFinal, cont );
         transform.position = Vector3.Lerp(m1, m2, cont);
-    }
     }
 
 }

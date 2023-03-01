@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// Só desce só, msm...
+/// </summary>
 public class DesceSimples : inimigo {
 
     void Start() {

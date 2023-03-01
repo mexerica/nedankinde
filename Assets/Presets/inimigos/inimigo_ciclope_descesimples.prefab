@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 1360816487023247568}
   m_Layer: 7
   m_Name: atirador
-  m_TagString: Untagged
+  m_TagString: Ruim
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

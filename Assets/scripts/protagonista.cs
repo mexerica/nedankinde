@@ -45,9 +45,9 @@ public class protagonista : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        Boomerang script = collision.GetComponent<Boomerang>();
+        TiroBoomerang script = collision.GetComponent<TiroBoomerang>();
         if (script != null && script.isVoltando) {
-            GetComponent<Stats>().especial ++;
+            GetComponent<Stats>().addEspecial();
             Destroy(collision.gameObject);
         }
     }

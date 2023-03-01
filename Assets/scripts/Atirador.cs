@@ -36,11 +36,11 @@ public class Atirador : MonoBehaviour {
         if (
             deveEspecial &&
             timerEspecial >= intervaloEspecial &&
-            GetComponentInParent<Stats>().especial > 0
+            GetComponentInParent<Stats>().getEspecial() > 0
         ) {
             Atirar(especial, clipespecial);
             timerEspecial = 0;
-            GetComponentInParent<Stats>().especial --;
+            GetComponentInParent<Stats>().rmvEspecial();
         }
     }
 
