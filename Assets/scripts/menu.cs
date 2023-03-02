@@ -11,40 +11,31 @@ public class menu : MonoBehaviour {
     [SerializeField] private SpriteRenderer[] contadorEspecial;
 
     void Start() {
-        int vidas = protagonista.GetComponent<Stats>().getVida();
-        int especial = protagonista.GetComponent<Stats>().getEspecial();
-
-        separaDigitos(vidas, contadorVidas, 0);
-        separaDigitos(especial, contadorEspecial, 0);
-
-        protagonista.GetComponent<Stats>().interfaceAtualizada();
+        atualizaPlacar();
     }
 
     void Update() {
         if (protagonista != null && protagonista.GetComponent<Stats>().deveMudarInterface()) {
-            int vidas = protagonista.GetComponent<Stats>().getVida();
-            int especial = protagonista.GetComponent<Stats>().getEspecial();
-
-            separaDigitos(vidas, contadorVidas, 0);
-            separaDigitos(especial, contadorEspecial, 0);
-            
-            protagonista.GetComponent<Stats>().interfaceAtualizada();
+            atualizaPlacar();
         }
-            
     }
 
-    /// <summary>
-    /// Ta errado isso aqui, ele ignora valores com mais digitos, vou mudar depois
-    /// </summary>
-    private void separaDigitos(int valor, SpriteRenderer[] contador, int indice) {
+    private void setaDigitos(string valor, SpriteRenderer[] contador) {
+        for (int i=0; i<valor.Length; i++) {
+            int v = valor[i] - '0';
+            contador[i].sprite = numeros[v];
+        }
+    }
 
-        contador[indice].sprite = numeros[valor%10];
+    private void atualizaPlacar() {
+        // depois da pra separar em dois metodos aqui e só atualizar oq precisa
+        int vidas = protagonista.GetComponent<Stats>().getVida();
+        setaDigitos(vidas.ToString("D2"), contadorVidas);
 
-        if (valor < 10)
-            return;
+        int especial = protagonista.GetComponent<Stats>().getEspecial();
+        setaDigitos(especial.ToString("D2"), contadorEspecial);
 
-        separaDigitos(valor / 10, contador, indice+1);
-        
+        protagonista.GetComponent<Stats>().interfaceAtualizada();
     }
 
 }

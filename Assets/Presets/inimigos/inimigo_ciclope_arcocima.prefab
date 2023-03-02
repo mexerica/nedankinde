@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938890c63e2dd5a4485312d5cff11421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 2
+  vida: 4
   especial: 0
   isVilao: 1
 --- !u!114 &6925939777119521115

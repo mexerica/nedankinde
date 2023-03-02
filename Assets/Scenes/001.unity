@@ -1646,11 +1646,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: acab049190b63ec43b1295081834fe0e, type: 3}
   - {fileID: 21300000, guid: 7d9c2604f9c43e641805e47a86eb04bf, type: 3}
   contadorVidas:
-  - {fileID: 44227603}
   - {fileID: 1889922073}
+  - {fileID: 44227603}
   contadorEspecial:
-  - {fileID: 776371406}
   - {fileID: 1983367496}
+  - {fileID: 776371406}
 --- !u!1 &2063790032
 GameObject:
   m_ObjectHideFlags: 0
