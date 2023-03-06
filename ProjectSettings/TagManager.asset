@@ -8,6 +8,7 @@ TagManager:
   - TiroRuim
   - Bom
   - Ruim
+  - Poder
   layers:
   - Default
   - TransparentFX

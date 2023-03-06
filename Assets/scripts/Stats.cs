@@ -26,13 +26,22 @@ public class Stats : MonoBehaviour {
     }
 
     void Update() {
-        if (vida <= 0)
+        if (vida <= 0) {
+            if (isVilao) {
+                transform.GetComponent<inimigo>().dropaLoot();
+            } else {
+                //game over
+            }
             Destroy(gameObject);
+        }
+            
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag == tipoInimigo) {
+        if (collision.gameObject.tag.Equals(tipoInimigo)) {
             rmvVida(collision.GetComponent<Tiro>().dano);
+        } else if (collision.gameObject.tag.Equals("Poder") && !isVilao) {
+            collision.GetComponent<Poder>().coletar(this);
         }
     }
 
@@ -40,9 +49,10 @@ public class Stats : MonoBehaviour {
         return especial;
     }
 
-    public void addEspecial() {
-        if (especial < 99)
-            especial += 1;
+    public void addEspecial(int especial) {
+        especial += especial;
+        if (especial >= 99)
+            especial = 99;
         if (!isVilao)
             mudarInterface = true;
     }

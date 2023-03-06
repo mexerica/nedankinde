@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938890c63e2dd5a4485312d5cff11421, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 10
+  vida: 4
   especial: 2
   isVilao: 0
 --- !u!1 &377257197
@@ -585,6 +585,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
+  - {fileID: 882329581}
+  - {fileID: 591489100}
   - {fileID: 882329581}
 --- !u!1 &460092392
 GameObject:

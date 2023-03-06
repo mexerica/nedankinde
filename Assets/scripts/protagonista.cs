@@ -45,11 +45,14 @@ public class protagonista : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        TiroBoomerang script = collision.GetComponent<TiroBoomerang>();
-        if (script != null && script.isVoltando) {
-            GetComponent<Stats>().addEspecial();
-            Destroy(collision.gameObject);
+        if (collision.gameObject.tag.Equals("TiroBom")) {
+            TiroBoomerang script = collision.GetComponent<TiroBoomerang>();
+            if (script != null && script.isVoltando) {
+                GetComponent<Stats>().addEspecial(1);
+                Destroy(collision.gameObject);
+            }
         }
+        
     }
 
 }

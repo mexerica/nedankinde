@@ -125,7 +125,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2293174722096917766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,6 +154,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 3
+  poderVida: {fileID: 4687492002881624560, guid: 913f77e7a5819274ca4ff1ff74f283ab, type: 3}
+  chanceDropVida: 10
+  poderEspecial: {fileID: 0}
+  chanceDropEspecial: 0
 --- !u!1 &4083441225027769572
 GameObject:
   m_ObjectHideFlags: 0

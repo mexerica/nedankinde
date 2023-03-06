@@ -17,6 +17,10 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
 
 ### Fazer
 
+#### Arrumar
+
+- Tem algum erro bizarro na spawner q vai aumentando entre waves o intervalo entre inimigos
+
 #### Game Design
 
 * diálogos entre as waves
@@ -27,7 +31,7 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
     - novos e melhores padrões de movimento dos inimigos
     - adicionar um deslocamento entre os inimigos da wave, pra não ficar uma fila perfeita de otários
     - várias cores do mesmo inimigo pra render mais, cada um atira de um jeito, sei lá.
-    - aleatoriedade no padrao de movimento
+    - aleatoriedade no padrao de movimento, velocidade de tiro, rota de movimento...
 * bosses
     - tudo
 * tiros
@@ -35,6 +39,11 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
     - o tiro é destruido no impacto
     - velocidade de alguns tiros varia
     - aleatoriedade na direcao de alguns tiros dos inimigos
+* poderes
+    - o poder vai em uma direção "aleatoria", mas sempre em direção ao lado oposto ao que ele spawnou
+    - fica girandinho devagar
+    - vai em direção ao jogador quando proximo o bastante
+    - um escudo
 
 #### Aparencia
 * escrever 'Score' na interface
