@@ -18,15 +18,21 @@ public class ArcoCima : inimigo {
         posFinal = new Vector3(transform.position.x*(-1), transform.position.y, 0);
     }
 
+    private void FixedUpdate() {
+        seMove();
+    }
+
     void Update() {
         if (isForaDaTela())
             Destroy(gameObject);
 
         if (transform.position.Equals(posFinal))
             Destroy(gameObject);
+    }
 
-        if (cont < velocidade)
-            cont += velocidade *Time.deltaTime;
+    private void seMove() {
+        if (cont < 1)
+            cont += velocidade * Time.deltaTime;
 
         Vector3 m1 = Vector3.Lerp( posInicial, posControle, cont );
         Vector3 m2 = Vector3.Lerp( posControle, posFinal, cont );

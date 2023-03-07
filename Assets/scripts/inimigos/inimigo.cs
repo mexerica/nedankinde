@@ -19,25 +19,26 @@ public class inimigo : MonoBehaviour {
             || transform.position.y < -6.0f;
     }
 
-    public GameObject dropaLoot() {
-        int aleatorio = Random.Range(1, 101);
-        if (aleatorio <= chanceDropVida) {
-            return Instantiate(
-                poderVida,
+    public void dropaLoot() {
+        GameObject loot = escolheLoot();
+        if (loot != null) {
+            Instantiate(
+                loot,
                 new Vector3(transform.position.x, transform.position.y, 0),
                 Quaternion.identity
             );
-        } else {
-            aleatorio = Random.Range(1, 101);
-            if (aleatorio <= chanceDropEspecial) {
-                return Instantiate(
-                    poderEspecial,
-                    new Vector3(transform.position.x, transform.position.y, 0),
-                    Quaternion.identity
-                );
-            }
         }
-        
+    }
+
+    private GameObject escolheLoot() {
+        int aleatorio = Random.Range(1, 101);
+        if (aleatorio <= chanceDropVida)
+            return poderVida;
+
+        aleatorio = Random.Range(1, 101);
+        if (aleatorio <= chanceDropEspecial)
+            return poderEspecial;
+
         return null;
     }
 }
