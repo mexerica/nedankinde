@@ -3,19 +3,19 @@ using UnityEngine;
 
 public class spawner : MonoBehaviour {
 
-    private float timer;
-
-    private int indice;
+    [Range(0, 10)][SerializeField] private float espera = 2;
 
     [SerializeField] private List<Wave> waves;
 
-    private float espera;
-
     private Wave waveAtual;
 
+    private float timer;
+
+    private int indice = 0;
+
+    private float espacamento;
+
     void Start() {
-        indice = 0;
-        espera = 2;
     }
 
     void Update() {
@@ -35,12 +35,10 @@ public class spawner : MonoBehaviour {
 
     private void SpawnAll() {
         //TODO: achar um jeito de retornar os inimigos? não precisa
-        float espacamento = waveAtual.intervalo;
-        if (waveAtual.inimigo != null) {
-            for (int i=0; i<waveAtual.quantidade; i++) {
-                Invoke("Spawn", waveAtual.intervalo);
-                waveAtual.intervalo += espacamento;
-            }
+        espacamento = waveAtual.intervalo;
+        for (int i=0; i<waveAtual.quantidade; i++) {
+            Invoke("Spawn", espacamento);
+            espacamento += espacamento;
         }
     }
 

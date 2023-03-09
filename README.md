@@ -19,7 +19,7 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
 
 #### Arrumar
 
-- Tem algum erro bizarro na spawner q vai aumentando entre waves o intervalo entre inimigos
+- Spawner ainda ta meio estranha, mas melhorou o intervalo
 
 #### Game Design
 

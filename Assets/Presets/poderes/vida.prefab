@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6261246766059881669}
   - component: {fileID: 7916742404151460683}
   - component: {fileID: 7854164244665175986}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: vida
   m_TagString: Poder
   m_Icon: {fileID: 0}

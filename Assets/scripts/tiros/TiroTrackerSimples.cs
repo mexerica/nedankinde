@@ -23,8 +23,6 @@ public class TiroTrackerSimples : Tiro {
     void Update() {
         if (isForaDaTela())
             Destroy(gameObject);
-            
-        
     }
 
     private void seMove() {

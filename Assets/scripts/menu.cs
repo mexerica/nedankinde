@@ -10,8 +10,13 @@ public class menu : MonoBehaviour {
 
     [SerializeField] private SpriteRenderer[] contadorEspecial;
 
+    [SerializeField] private SpriteRenderer[] contadorScore;
+
+    private int score = 0;
+
     void Start() {
         atualizaPlacar();
+        setScore(score);
     }
 
     void Update() {
@@ -36,6 +41,14 @@ public class menu : MonoBehaviour {
         setaDigitos(especial.ToString("D2"), contadorEspecial);
 
         protagonista.GetComponent<Stats>().interfaceAtualizada();
+    }
+
+    public void setScore(int score) {
+        this.score += score;
+        if (this.score > 99999)
+            this.score = 99999;
+            
+        setaDigitos(this.score.ToString("D5"), contadorScore);
     }
 
 }

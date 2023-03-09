@@ -15,10 +15,10 @@ public class Tiro : MonoBehaviour {
     }
 
     protected bool isForaDaTela() {
-        return transform.position.x > 3.0f
-            || transform.position.x < -5.0f
+        return transform.position.y < -4.0f
             || transform.position.y > 4.0f
-            || transform.position.y < -4.0f;
+            || transform.position.x < -5.0f
+            || transform.position.x > 3.0f;
     }
 
 }

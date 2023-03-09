@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2838913381296821518}
   - component: {fileID: 421708018121918787}
   - component: {fileID: 5196466334545832293}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: especial_protagonista
   m_TagString: TiroBom
   m_Icon: {fileID: 0}

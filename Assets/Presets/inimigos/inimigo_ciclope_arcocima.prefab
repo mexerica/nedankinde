@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 0.8
+  valor: 30
   poderVida: {fileID: 4687492002881624560, guid: 913f77e7a5819274ca4ff1ff74f283ab, type: 3}
   chanceDropVida: 10
   poderEspecial: {fileID: 0}

@@ -719,7 +719,7 @@ MonoBehaviour:
   duracao: 4
   inimigo: {fileID: 2293174722096917816, guid: 3e284a2e90fd5ef4096e05ffecb787e0, type: 3}
   posicao: {x: -1.5, y: 4, z: 0}
-  quantidade: 1
+  quantidade: 4
   intervalo: 0.3
 --- !u!1 &776371404
 GameObject:
@@ -853,7 +853,7 @@ MonoBehaviour:
   inimigo: {fileID: 2293174722096917816, guid: 5fedb0a8a8133554db6e19f57bf18919, type: 3}
   posicao: {x: 1.5, y: 4, z: 0}
   quantidade: 5
-  intervalo: 0.3
+  intervalo: 0.6
 --- !u!1 &888224406
 GameObject:
   m_ObjectHideFlags: 0
