@@ -25,6 +25,7 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
 
 * diálogos entre as waves
 * modo truzão, que vc tenta controlar uma bola com seus tiros [東方靈異伝](https://www.youtube.com/watch?v=w3YmmdgcHb8)
+* criar asteroids que destroem tanto a protagonista quanto inimigos e obstruem tiros
 * protagonista
     - fica invulneravel depois de levar um tiro
 * inimigos
