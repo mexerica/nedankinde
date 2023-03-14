@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,37 +14,43 @@ public class spawner : MonoBehaviour {
 
     private int indice = 0;
 
-    private float espacamento;
+    private float intervalo;
+
+    private bool terminouWave = true;
 
     void Start() {
     }
 
     void Update() {
-        if (indice < waves.Count) {
+        if (indice < waves.Count && terminouWave) {
             if (timer > espera) {
                 waveAtual = waves[indice];
                 espera = waveAtual.duracao;
                 
-                SpawnAll();
-
                 indice++;
                 timer = 0;
+
+                SpawnWave();
             } else
                 timer += Time.deltaTime;
         }
     }
 
-    private void SpawnAll() {
+    private void SpawnWave() {
         //TODO: achar um jeito de retornar os inimigos? não precisa
-        espacamento = waveAtual.intervalo;
-        for (int i=0; i<waveAtual.quantidade; i++) {
-            Invoke("Spawn", espacamento);
-            espacamento += espacamento;
+        terminouWave = false;
+        intervalo = waveAtual.intervalo;
+        for (int i=1; i<=waveAtual.quantidade; i++) {
+            StartCoroutine(SpawnInimigo(i==waveAtual.quantidade, intervalo));
+            intervalo += waveAtual.intervalo;
         }
     }
 
-    private GameObject Spawn() {
+    private IEnumerator SpawnInimigo(bool ultimo, float intervalo) {
+        yield return new WaitForSeconds(intervalo);
+        terminouWave = ultimo;
         Vector3 posRelativa = waveAtual.posicao;
-        return Instantiate(waveAtual.inimigo, posRelativa, Quaternion.identity);
+        Instantiate(waveAtual.inimigo, posRelativa, Quaternion.identity);
+        Debug.Log(terminouWave);
     }
 }

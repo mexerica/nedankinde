@@ -19,8 +19,6 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
 
 #### Arrumar
 
-- Spawner ainda ta meio estranha, mas melhorou o intervalo
-
 #### Game Design
 
 * diálogos entre as waves
@@ -47,6 +45,7 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
     - um escudo
 
 #### Aparencia
+
 * escrever 'Score' na interface
 * usar o array de numeros pra exibir valores maiores q 9
 * animação/som do player sendo atingido
