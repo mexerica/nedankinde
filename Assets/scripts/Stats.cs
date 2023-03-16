@@ -12,9 +12,9 @@ public class Stats : MonoBehaviour {
     /// </summary>
     [SerializeField] private int especial = 2;
 
-    [SerializeField] private bool isVilao;
+    [SerializeField] private TipoEntidade tipoEntidade;
 
-    private string tipoInimigo;
+    string tiroQMachuca;
 
     /// <summary>
     /// Usado pela protagonista pra sinalizar que a interface precisa ser atualizada com novos valores
@@ -22,12 +22,12 @@ public class Stats : MonoBehaviour {
     private bool mudarInterface = true;
 
     void Start() {
-        tipoInimigo = (isVilao ? "TiroBom" : "TiroRuim");
+        tiroQMachuca = tipoEntidade.Equals(TipoEntidade.INIMIGO) ? "TiroBom" : "TiroRuim";
     }
 
     void Update() {
         if (vida <= 0) {
-            if (isVilao) {
+            if (tipoEntidade.Equals(TipoEntidade.INIMIGO)) {
                 transform.GetComponent<inimigo>().dropaLoot();
             } else {
                 //game over
@@ -38,9 +38,9 @@ public class Stats : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.gameObject.tag.Equals(tipoInimigo)) {
+        if (collision.gameObject.tag.Equals(tiroQMachuca)) {
             rmvVida(collision.GetComponent<Tiro>().dano);
-        } else if (collision.gameObject.tag.Equals("Poder") && !isVilao) {
+        } else if (collision.gameObject.tag.Equals("Poder") && tipoEntidade.Equals(TipoEntidade.PROTAGONISTA)) {
             collision.GetComponent<Poder>().coletar(this);
         }
     }
@@ -53,14 +53,14 @@ public class Stats : MonoBehaviour {
         especial += especial;
         if (especial >= 99)
             especial = 99;
-        if (!isVilao)
+        if (tipoEntidade.Equals(TipoEntidade.PROTAGONISTA))
             mudarInterface = true;
     }
 
     public void rmvEspecial() {
         if (especial > 0)
             especial -= 1;
-        if (!isVilao)
+        if (tipoEntidade.Equals(TipoEntidade.PROTAGONISTA))
             mudarInterface = true;
     }
 
@@ -71,7 +71,7 @@ public class Stats : MonoBehaviour {
     public void addVida() {
         if (vida < 99)
             vida += 1;
-        if (!isVilao)
+        if (tipoEntidade.Equals(TipoEntidade.PROTAGONISTA))
             mudarInterface = true;
     }
 
@@ -80,7 +80,7 @@ public class Stats : MonoBehaviour {
 
         if (this.vida < 0)
             this.vida = 0;
-        if (!isVilao)
+        if (tipoEntidade.Equals(TipoEntidade.PROTAGONISTA))
             mudarInterface = true;
     }
 

@@ -515,7 +515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 4
   especial: 2
-  isVilao: 0
+  tipoEntidade: 0
 --- !u!1 &377257197
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,7 +632,7 @@ GameObject:
   - component: {fileID: 426720936}
   - component: {fileID: 426720937}
   m_Layer: 0
-  m_Name: spawner1
+  m_Name: spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

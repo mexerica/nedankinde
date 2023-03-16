@@ -51,6 +51,5 @@ public class spawner : MonoBehaviour {
         terminouWave = ultimo;
         Vector3 posRelativa = waveAtual.posicao;
         Instantiate(waveAtual.inimigo, posRelativa, Quaternion.identity);
-        Debug.Log(terminouWave);
     }
 }
