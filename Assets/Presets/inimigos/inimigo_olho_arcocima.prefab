@@ -209,9 +209,9 @@ MonoBehaviour:
   deveEspecial: 0
   cliptiro: {fileID: 8300000, guid: 1f321256217aef544a541a2509fee965, type: 3}
   clipespecial: {fileID: 0}
-  tiro: {fileID: 7020676635995682927, guid: b748e61875c64af4cb254b5175a37060, type: 3}
+  tiro: {fileID: 7020676635995682927, guid: 8673f727d98c3fa44af6615a961523b8, type: 3}
   especial: {fileID: 0}
-  intervalo: 0.85
+  intervalo: 0.6
   intervaloEspecial: 3
 --- !u!82 &1360816487023247568
 AudioSource:
