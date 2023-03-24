@@ -51,3 +51,7 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
 * animação/som do player sendo atingido
 * um fundo um pouco mais dinâmico
 * todo o resto
+
+### Créditos
+
+Fontes baixadas do Google fonts, e as mais feias desenhadas à mão no paint
