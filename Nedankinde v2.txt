@@ -1,0 +1,290 @@
+﻿Havia um planeta em que a paz reinava. Todos os seus habitantes viviam em paz, tanto com eles mesmos, quanto com a natureza. 
+ Mais um dia esse planeta foi atacado por forças externas, piratas especiais em busca de um bom saque.
+ Os habitantes daquele planeta lutaram e conseguiram expulsar os invasores, mas muito foi destruído.
+ Uma benevolente rainha surgiu e trouxe a reconstrução,todos a amavam e ela amava a todos igualmente. Incluindo seus nobres filhos, que um dia herdariam o trono.
+
+
+Ato 1 - Conto de fadas
+
+
+Nível 1 - 
+* Guarda real: Princesa, seus irmãos estão à sua procura.
+* Protagonista: Eu só estava costurando uma camisa para minha mãe. 
+* Guarda real: De qualquer forma eles os esperam na área de treino.
+* Protagonista: Nesse caso,nós deveríamos fazer um aquecimento.
+* Guarda real: Tem certeza princesa?
+* Protagonista: Vamos lá.
+Boss
+* Protagonista: Esses treinos são muito chatos.
+                 O que acha de um pequeno duelo.
+* Guarda real: Paciência é uma qualidade desejável em um monarca.
+                 Mas acho que um pequeno aquecimento seria adequado.
+Fim
+* Guarda real: Você realmente ficou mais forte.
+* Protagonista: Hpmf, eu não tenho como saber com você pegando leve.
+* Guarda real: Acho que a senhorita deveria encontrar seus irmãos agora.
+
+
+Nível 2  - 
+* Protagonista: Olá irmãos.
+* Myers: Ah irmã. Apesar de ser sua presença ser sempre motivo de júbilo. Você poderia nos ter dado essa graça previamente.
+* Protagonista: É desculpe, pelo atraso.
+* Myers: Bom, estamos em paz então.
+  Hoje eu irei lhe ensinar a usar a minha arma preferida, o boomerangue.
+* Protagonista: Não poderíamos treinar com agulhas?
+          Eu já tenho uma boa familiaridade com elas.
+* Myers: É bom ter um foco, porém quanto mais você souber, mais opções terá na época de necessidade. 
+Boss
+* Protagonista: Acho que entendi.
+                 Que tal um teste prático?
+* Guarda real: Achei que não fosse sugerir.
+Fim
+* Protagonista: GG easy
+
+
+Nível 3  - 
+* Protagonista: Duas vitórias seguidas, isso aí.
+* Myers: O orgulho precede a queda, jovem.
+   E acho que já está na hora de seus estudos.
+* Guarda real: Senhor, tem um grupo causando confusão na cidade.
+*  Protagonista: Essa parece uma boa hora para testar minha nova habilidade.
+* Myers: Não espere.
+          Ah, essas crianças de hoje.
+Boss
+* Protagonista: Você parece ser o líder dos baderneiros.
+* Baderneiro: Eu não tenho o que tratar com uma criança.
+* Protagonista: É o que vamos ver.
+Fim
+* Baderneiro: Você é melhor do que eu esperava.
+                Mas eu tenho que ir agora.
+* Protagonista: Não, espere.
+
+
+Nível 4  - 
+* Protagonista: Infelizmente deixei eles fugirem.
+* Guarda real: Não se preocupe com isso princesa.
+                 Além disso, você botou eles pra correr.
+* Rainha: Ele está certo, minha querida.
+* Guarda real: Minha rainha.
+* Protagonista: Eu apenas acho que eu poderia ter feito mais.
+* Rainha: Por que você não vai encontrar seus irmãos? Para se animar um pouco.
+* Guarda real 2: Rainha, rainha. Invadiram o palácio.
+* Rainha: O quê?
+* Guarda real 2: Um grupo, um deles é o baderneiro de antes.
+* Protagonista: Isso é uma boa oportunidade.
+Boss
+* Protagonista: Parece que nos encontramos de novo.
+* Baderneiro: Oh, você é da família real? 
+* Protagonista: E você está preso?
+Fim
+* Baderneiro: No final, você ainda é apenas uma criança.
+*  Guarda real: Senhorita!!
+Ele toma o ataque no lugar dela
+* Protagonista: Não, guarda real(eu não quero dar um nome para ele agora).
+* Guarda: A senhorita…realmente ficou mais forte.
+Ele morre.
+* Protagonista: Nãããããooooooooooooooooooooooooooooooooo (tipo aquele do darth vader).
+
+
+Ato 2 - Treinamento
+Nível 5 -
+* Rainha: Como ela está?
+* Guarda real 2: Trancada no quarto ainda.
+                Desde aquele dia ela tem se trancado lá.
+* Irmão 1:  Ela precisa de um tempo para se recuperar.
+            No momento, precisamos discutir sobre a invasão.
+            Segundo as nossas fontes, nossos medos estavam certos.
+            Os piratas realmente voltaram.
+* Rainha: …
+Já sabemos onde eles estão se escondendo?
+* Guarda real 2: Ainda não, minha rainha.
+* Rainha: Então descubram o mais rápido possível.
+          Não podemos deixar nenhum vivo dessa vez
+* Protagonista: Piratas, huh.
+* Guarda real: Princesa!
+* Protagonista: Mãe, peço humildemente que me permita liderar uma tropa de expedição em busca dos invasores.
+* Rainha: Pedido negado.
+* Protagonista: Mas por quê?
+* Rainha: Você ainda é muito jovem para isso.
+          E acho que você já deixou muito claro que você não é forte o suficiente.
+  Deixe as preocupações do reino para mim e seus irmãos.
+        Às pessoas saem da sala.
+* Protagonista: Então eu acho que vou lidar com isso sozinha.
+          Acho que o primeiro passo é me tornar mais forte.
+          Não posso deixar que se sacrifiquem por mim de novo.
+Boss
+* Irmã 1: Talvez eu possa ajudar com isso.
+* Protagonista: Isso é um desafio?
+Fim
+* Irmã 1: Você não deveria levar tudo que nossa mãe diz tão á sério.
+        Você é mais forte do que pensa.
+        Fique com isso. (Arma nova)
+
+
+Nível 6 -
+* Irmã 1: Sabe, tem uma forma muito boa de você treinar, mesmo estando sozinha.
+* Protagonista: Qual é?
+* Irmã 1: Shadow-boxing. Uma técnica de boxe.
+* Protagonista: Você pratica boxe? Como você fez a mãe deixar?
+* Irmã 1: Ela também não sabe, então eu pratico em segredo.
+        Se eu fosse esperar pela vontade dela eu ficaria presa naquele castelo 24 horas por dia.
+* Protagonista: Então … o que é Shadow-boxing?
+* Irmã 1: Em termos simples, se baseia em enfrentar um inimigo imaginário. Imaginar um adversário e enfrentá-lo.
+        É uma boa forma de treinar suas técnicas e se manter pronta para o combate.
+* Protagonista: Certo me deixe tentar.
+Ela imagina um level com os inimigos que atacaram o palácio
+Boss
+* Baderneiro: No final, você ainda é apenas uma criança.
+* Protagonista: Mesmo que você não seja real, não será igual a ultima vez.
+Fim
+* Irmã 1: Você está bem? Você parecia longe.
+* Protagonista: Estou ótima.
+
+
+Nível 7 -
+* Protagonista: Esse Shadow-boxing é bem útil.
+* Guarda real: Talvez você devesse parar.
+* Protagonista: Vo… eu estou imaginando isso, não é? 
+                  Você morreu por minha causa.
+* Guarda real: E por isso você quer me vingar?
+                 Você sabe que não é isso que eu iria querer.
+                 A culpa não foi sua.
+* Protagonista: Você não precisa mentir para fazer eu me sentir melhor. 
+           Eu estou ficando mais forte.
+           E quando a hora chegar eu farei justiça.
+* Guarda real: Sabe, eu não sou alguém que merece ser vingado. 
+                         Eu cometi muitos pecados durante minha vida.
+                         Eu gostaria que você fosse diferente.
+                         E acho que a minha única opção é parar a senhorita antes que o pior aconteça.
+Fim
+* Guarda real: Eu sinto muito, no fim, eu não consegui proteger você.
+ Ele some. 
+* Protagonista: Não precisa se preocupar. 
+A irmã dela chega.
+* Imã 1: Irmã, tudo bem? 
+           Quem é que estava com você?
+* Protagonista: …
+                 Ninguém.
+* Irmã 1: Certo…
+Eu só queria avisar que descobriram onde os piratas estão escondidos.
+
+
+Ato 3 - Vingança
+Nível 8 - 
+* Guarda real 2: Rainha, rainha. A princesa desapareceu.
+* Rainha: Como assim, desapareceu?
+* Guarda real 2: Não a encontramos em nenhum lugar.
+* Boomer: Ela deve ter ouvido que a localização do inimigo foi descoberta.
+* Irmão 2: Ela sempre foi uma fonte de problemas.
+* Irmã 3: Devemos ir atrás dela o mais rápido possível.
+* Rainha: Concordo plenamente. Devemos achá-la antes que ela morra ou o pior aconteça, a qualquer custo.
+Boss
+* Protagonista: Você parece ser o líder deles.
+* Monstro muito foda: sons de monstro.
+* Protagonista: ok
+Fim
+* Devo estar chegando perto.
+
+
+Nível 9 -
+Nível 10 - 
+* Protagonista: Finalmente nos encontramos de novo.
+* Baderneiro (chefe dos piratas): Oh, se não é a criança daquele dia.
+                                   Se bem que você parece ter amadurecido um pouco.
+                                   Talvez até estragado?
+* Protagonista: Você vai pagar pelo que fez.
+* Baderneiro (chefe dos piratas): Eu fiz muitas coisas.
+                   Você vai ter que ser mais especifica. 
+* Protagonista: O guarda real, ele me protegeu, morrendo em meu lugar. Você o matou.
+* Baderneiro (chefe dos piratas): Ah pobre boneca de madeira, tão perdida em seu mundinho que não consegue ver as próprias cordas.
+* Protagonista: Chega de conversa. Vamos começar.
+Fim
+* Protagonista: Aquele Shadow-boxing realmente valeu a pena.
+                  Quem é apenas uma criança agora?
+* Baderneiro (chefe dos piratas): Você está curtindo isso não está?
+                                    Você é igual a todos eles.
+Criança entra na cena.
+* Criança: Papaiiiiiiiiiii.
+* Baderneiro (chefe dos piratas): Filha!
+* Criança: Paaaapai.
+* Baderneiro (chefe dos piratas): Vai ficar tudo bem, vai ficar tudo bem …
+* Protagonista: Então eu não deveria matar você por causa da sua filha?
+                           Onde estava a sua piedade quando matou meu amigo?
+* Criança: Más… más dona. Meu pai não matou ninguém.
+           Eu  estava lá, eu vi tudo.
+* Protagonista: Como assim.
+* Criança: O tiro que atingiu aquele moço, veio do castelo.
+
+
+Ato 4 - Fuga
+Nível 11 - 
+* Protagonista: Você… Você está mentindo.
+* Criança: Não dona, eu não estou, eu vi claramente uma arma sendo apontada do castelo.
+* Protagonista: Você tem certeza?
+* Criança: Tenho sim.
+* Protagonista: Mas isso não faz sentido.
+* Baderneiro: Pelo visto você não conhece sua própria família.
+* Irmão 2: Ah irmãzinha, aqui está você.
+          Pelo visto você consegue se virar sozinha agora.
+                     Mas parece que você deixou dois sobrando.
+          Você sabe o que eu penso, né?
+          Um trabalho incompleto é um trabalho mal feito.
+* Protagonista: Eu gostaria de tirar uma dúvida com você.
+          A respeito da morte do guarda 1.
+* Irmão 2: …
+          Conversar durante o trabalho é considerado má conduta, sabia?
+         Termine primeiro e falamos depois.
+* Protagonista: Eu acho que agora é uma ótima hora para papear.
+          Principalmente quando o assunto é a morte de um de meus súditos.
+* Irmão 2: Você é um saco, sabia. Sempre uma decepção. 
+          Me fez vir até aqui e agora eu vou ter que me sujar.
+* Protagonista: Fujam.
+Fim
+* Criança: Venha conosco, tia.
+
+
+Nível 12 - 
+* Protagonista: Para onde estamos indo?
+* Baderneiro: Para casa.
+                Mas temos que sair daqui com  vida daqui primeiro.
+* Protagonista: Deixa que eu abro o caminho.
+Boss
+* Irmão 2: Você não achou que eu te deixaria fugir. Achou?
+Fim
+* Irmão 2: Você não pode comigo.
+          Cresceu um pouco, mas ainda não passa de um inseto.
+* Myers: Protagonista.
+           O que está se sucedendo aqui.
+                   Exijo que explique-se Irmão.
+* Irmão 2: Não há muito a ser explicado.
+  Estou apenas cuidando de traidores.
+* Myers: Traidores. Mas essa é a nossa irmã.
+     Alguém de sangue parecido com o nosso.
+* Irmão 2: Pois bem.
+          Agora me deixei continuar.
+          Você sabe que eu odeio um trabalho inacabado.
+* Myers: Antes disso terás que passar por cima de meu de meu cadáver.
+* Irmão 2: Heh, trairia a coroa que te alimentou.
+* Myers: E você, trairia o seu próprio sangue?
+           Fuja, Protagonista. 
+
+
+Ato 5 - Revelações
+Nível 13 -
+* Protagonista: Espero que Myers fique bem.
+                   …
+                  Estamos perto?
+* Baderneiro: Já chegamos.
+* Protagonista: Vocês vivem aqui?
+                  Mas tudo está destruído aqui.
+* Baderneiro: Nunca conseguimos nos recuperar da guerra contra o seu povo.
+                Esse foi o único lugar que conseguimos depois que fomos expulsos.
+* Protagonista: Eu gostaria de tirar uma dúvida.  
+         Por que vocês tentaram nos invadir?
+* Baderneiro: He.
+                       HeheheheheheheheheheheHeheheheheheheheheheheHeheheheheheheheheheheHeheheheheheheheheheheHeheheheheheheheheheheHehehehehehehehehehehe.HeheheheheheheheheheheHeheheheheheheheheheheHehehehehehehehehehehehehehehehehehehehe.
+* Criança: Nós não invadimos vocês, moça.
+           Vocês nos invadiram
+
+
+Ato 6 - Confronto
