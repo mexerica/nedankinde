@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Cutscene001 : MonoBehaviour {
@@ -5,7 +6,7 @@ public class Cutscene001 : MonoBehaviour {
     private int i = 0;
 
     private string[] falas = {
-        "Princesa! Finalmente te encontrei!!1!",
+        $"Princesa! {Environment.NewLine}Finalmente te encontrei!!1!",
         "Aff, cara. Larga do meu pé.",
         "Mas Princesa, eu não sei escrever diálogos...",
         "Só coloca qualquer coisa, cara, ninguém vai ler.",

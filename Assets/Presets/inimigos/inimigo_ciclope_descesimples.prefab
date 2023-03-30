@@ -140,7 +140,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 4
   especial: 0
-  tipoEntidade: 1
+  isVilao: 1
+  GameOver: {fileID: 0}
 --- !u!114 &1388047956062495088
 MonoBehaviour:
   m_ObjectHideFlags: 0

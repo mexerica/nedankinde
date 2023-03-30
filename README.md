@@ -17,6 +17,8 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
 
 ### Fazer
 
+* fazer a cutscene ficar atraz da máscara do menu.
+
 #### Arrumar
 
 #### Game Design
@@ -51,6 +53,12 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
 * animação/som do player sendo atingido
 * um fundo um pouco mais dinâmico
 * todo o resto
+* usar fontes (tipográficas) diferentes pra cada personagem
+* tocar um somzin quando o personagem fala
+
+#### Código
+
+* dá pra reaproveitar os dialogos/scripts de animação.
 
 ### Créditos
 

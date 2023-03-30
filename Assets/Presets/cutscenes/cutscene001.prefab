@@ -144,8 +144,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Princesa!\nFinalmente te encontrei!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 819161e7b91e44d4db028c8c79bb9562, type: 2}
-  m_sharedMaterial: {fileID: 9185775562267830282, guid: 819161e7b91e44d4db028c8c79bb9562, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c80064b61b00b794a867fdf5f9286397, type: 2}
+  m_sharedMaterial: {fileID: 3459109908965910581, guid: c80064b61b00b794a867fdf5f9286397, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
