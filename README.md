@@ -18,6 +18,7 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
 ### Fazer
 
 * fazer a cutscene ficar atraz da máscara do menu.
+* destruir a cutscene quando chegar no fim dos dialogos, usando o script e animação se possível
 
 #### Arrumar
 
@@ -58,7 +59,7 @@ Programação e arte: [Ricardo](https://github.com/sleiph)
 
 #### Código
 
-* dá pra reaproveitar os dialogos/scripts de animação.
+* Dá pra reaproveitar os dialogos/scripts de animação e transicao.
 
 ### Créditos
 

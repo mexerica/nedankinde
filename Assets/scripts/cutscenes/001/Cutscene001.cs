@@ -1,33 +1,16 @@
-using System;
-using UnityEngine;
-
-public class Cutscene001 : MonoBehaviour {
-
-    private int i = 0;
-
-    private string[] falas = {
-        $"Princesa! {Environment.NewLine}Finalmente te encontrei!!1!",
-        "Aff, cara. Larga do meu pé.",
-        "Mas Princesa, eu não sei escrever diálogos...",
-        "Só coloca qualquer coisa, cara, ninguém vai ler.",
-        "Eu preciso de sete linhas pra testar os diálogos, mas só tenho cinco até agora!",
-        "Seis.",
-        "Obrigado, princesa, só queria isso mesmo, até mais. Se cuida, queridona."
-    };
-
-    [SerializeField] private TMPro.TextMeshProUGUI caixaDialogos;
+public class Cutscene001 : Cutscene {
 
     void Start() {
-        caixaDialogos.SetText(falas[0]);
+        setFalas(new string[6] {
+            //$"Princesa! {Environment.NewLine}Finalmente te encontrei!!1!",
+            "Princesa, seus irmãos estão à sua procura.",
+            "Eu só estava costurando uma camisa para minha mãe.",
+            "De qualquer forma eles nos esperam na área de treino.",
+            "Nesse caso nós deveríamos fazer um aquecimento.",
+            "Tem certeza princesa?",
+            "Vamos lá."
+        });
     }
-
-    void Update() {
         
-    }
-
-    public void setProximaFala() {
-        i++;
-        caixaDialogos.SetText(falas[i%falas.Length]);
-    }
 
 }

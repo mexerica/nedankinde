@@ -1,14 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class princesa001a : StateMachineBehaviour {
-
-    [SerializeField] private GameObject prefab;
+public class transicoes : StateMachineBehaviour {
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-        animator.transform.GetComponent<Cutscene001>().setProximaFala();
+        animator.transform.GetComponent<Cutscene>().setProximaFala();
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
