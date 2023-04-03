@@ -798,11 +798,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   espera: 2
   waves:
-  - {fileID: 882329581}
-  - {fileID: 591489100}
-  - {fileID: 882329581}
-  - {fileID: 2021880867}
-  - {fileID: 310452719}
   - {fileID: 317429585}
 --- !u!1 &460092392
 GameObject:
