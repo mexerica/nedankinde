@@ -286,5 +286,38 @@ Nível 13 -
 * Criança: Nós não invadimos vocês, moça.
            Vocês nos invadiram
 
+Protagonista: …
+	          O quê?
+Baderneiro: É uma longa história.
+	       Por que você não nos ajuda com o jantar e eu te conto durante a refeição?
+
+Nível 16 -
+Criança: Valeu pela ajuda, Dona.
+Protagonista: Não foi nada…
+	          Mas eu gostaria de continuarmos de onde paramos.
+Baderneiro: Pois bem.
+        Mas eu tenho um pressentimento de que você não vai gostar. 
+A partir daqui será um flashback.
+Baderneiro: A terra tem dado bons frutos ultimamente, não é querida? 
+Shell: Deus tem nos abençoado de muitas maneiras.
+          O céu está azul e os pássaros estão cantando.
+          E há uma semente em meu ventre.
+Baderneiro: Concordo plenamente.
+	       Quer comer mandioca hoje? Podemos cozinhá-la e comer com alguma carne.
+Shell: Seria ótimo.
+Guarda real(sim, é o que morre): Com licença cidadãos.
+				      Esse seria o planeta kudrado?
+Shell: Sim senhor. 
+          Veio de férias?
+Rainha: Então este é o planeta certo?
+Guarda real: É sim comandante.
+Rainha: Então acho que podemos começar.
+	 Extermine-os.
+Boss
+Shell : Querido. Eu…
+Baderneiro: Eu não sei o que vocês querem, mas vocês não tem chance contra nossos guardas.
+Fim
+Rainha: Muito bem soldados. Continuem a invasão.
+Nível 17-
 
 Ato 6 - Confronto
