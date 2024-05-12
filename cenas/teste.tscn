@@ -1,0 +1,67 @@
+[gd_scene load_steps=10 format=3 uid="uid://bkyt35ms00bnb"]
+
+[ext_resource type="Script" path="res://scripts/Player.gd" id="1_x2ne6"]
+[ext_resource type="Texture2D" uid="uid://bv6te771bvbxp" path="res://img/protagonista.png" id="2_iof30"]
+[ext_resource type="Texture2D" uid="uid://dajdiespegx8i" path="res://img/bg_menu.png" id="3_fx5p8"]
+[ext_resource type="Script" path="res://scripts/Arma Player.gd" id="4_xk6c4"]
+[ext_resource type="Texture2D" uid="uid://5fppe2f2mvv4" path="res://img/arma_tesoura.png" id="5_vymcl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dv5u3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3oi7j"]
+size = Vector2(437, 656)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_64m0e"]
+size = Vector2(87, 643)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kud3b"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(332, 514)
+script = ExtResource("1_x2ne6")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(-8, 1)
+scale = Vector2(1.02148, 1)
+texture = ExtResource("2_iof30")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_dv5u3")
+
+[node name="ParedeDir" type="StaticBody2D" parent="."]
+position = Vector2(712, 324)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParedeDir"]
+position = Vector2(220.5, 3)
+shape = SubResource("RectangleShape2D_3oi7j")
+
+[node name="Sprite2D" type="Sprite2D" parent="ParedeDir"]
+position = Vector2(220.5, 2.5)
+scale = Vector2(3.41406, 5.11719)
+texture = ExtResource("3_fx5p8")
+
+[node name="ParedeEsq" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParedeEsq"]
+position = Vector2(43.5, 321.5)
+shape = SubResource("RectangleShape2D_64m0e")
+
+[node name="Sprite2D" type="Sprite2D" parent="ParedeEsq"]
+position = Vector2(43, 323.5)
+scale = Vector2(0.6875, 5.05469)
+texture = ExtResource("3_fx5p8")
+
+[node name="Arma Player" type="Area2D" parent="."]
+position = Vector2(327, 424)
+script = ExtResource("4_xk6c4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Arma Player"]
+shape = SubResource("RectangleShape2D_kud3b")
+
+[node name="Sprite2D" type="Sprite2D" parent="Arma Player"]
+position = Vector2(0, 1)
+scale = Vector2(0.34375, 0.359375)
+texture = ExtResource("5_vymcl")
