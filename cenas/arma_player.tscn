@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bewp7ephx2cdf"]
+
+[ext_resource type="Script" path="res://scripts/Arma Player.gd" id="1_aexdt"]
+[ext_resource type="Texture2D" uid="uid://5fppe2f2mvv4" path="res://img/arma_tesoura.png" id="2_3fp17"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f5trr"]
+
+[node name="Arma player" type="Area2D"]
+script = ExtResource("1_aexdt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_f5trr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3.57628e-07, -2.38419e-07)
+scale = Vector2(0.3125, 0.3125)
+texture = ExtResource("2_3fp17")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

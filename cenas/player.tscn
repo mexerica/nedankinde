@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7c2lwd6qrbrp"]
+
+[ext_resource type="Script" path="res://scripts/Player.gd" id="1_wcdha"]
+[ext_resource type="Texture2D" uid="uid://bv6te771bvbxp" path="res://img/protagonista.png" id="2_tmknh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ye1h8"]
+size = Vector2(10, 12)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_wcdha")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, 1.90735e-06)
+scale = Vector2(0.554545, 0.546875)
+texture = ExtResource("2_tmknh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_ye1h8")
+
+[node name="Tiro_pos" type="Marker2D" parent="."]
+position = Vector2(0, -38)

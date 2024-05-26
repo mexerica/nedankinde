@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://k3jrpl0ta6vx"]
+
+[ext_resource type="Texture2D" uid="uid://di40qb6dtxo8i" path="res://img/arma_boomerang.png" id="1_ke010"]
+[ext_resource type="Script" path="res://scripts/Arma Player.gd" id="1_sesbs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o1efb"]
+size = Vector2(39, 47)
+
+[node name="Arma_especial" type="Area2D"]
+script = ExtResource("1_sesbs")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1.90735e-06, 4.76837e-07)
+scale = Vector2(0.6875, 0.796875)
+texture = ExtResource("1_ke010")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_o1efb")

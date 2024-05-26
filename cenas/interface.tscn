@@ -1,0 +1,89 @@
+[gd_scene load_steps=6 format=3 uid="uid://djv4pc16uga74"]
+
+[ext_resource type="Texture2D" uid="uid://dajdiespegx8i" path="res://img/bg_menu.png" id="1_u6ku2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dxi20"]
+size = Vector2(496, 649)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ma70f"]
+size = Vector2(129, 649)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r80gq"]
+size = Vector2(527, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u85o4"]
+size = Vector2(527, 20)
+
+[node name="Interface" type="Node2D"]
+position = Vector2(9, 0)
+
+[node name="ParedeDir" type="StaticBody2D" parent="."]
+position = Vector2(651, 22)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParedeDir"]
+position = Vector2(244, 302)
+scale = Vector2(3.875, 5.0625)
+texture = ExtResource("1_u6ku2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParedeDir"]
+position = Vector2(244, 301.5)
+shape = SubResource("RectangleShape2D_dxi20")
+
+[node name="ParedeEsq" type="StaticBody2D" parent="."]
+position = Vector2(-4, 4)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParedeEsq"]
+position = Vector2(59.5, 320.5)
+scale = Vector2(1.00781, 5.07031)
+texture = ExtResource("1_u6ku2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParedeEsq"]
+position = Vector2(59.5, 320.5)
+shape = SubResource("RectangleShape2D_ma70f")
+
+[node name="ParedeCima" type="StaticBody2D" parent="."]
+position = Vector2(124, 2)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParedeCima"]
+position = Vector2(259.5, 11)
+scale = Vector2(4.11719, 0.203125)
+texture = ExtResource("1_u6ku2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParedeCima"]
+position = Vector2(259.5, 11)
+shape = SubResource("RectangleShape2D_r80gq")
+
+[node name="ParedeBaixo" type="StaticBody2D" parent="."]
+position = Vector2(122, 634)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParedeBaixo"]
+position = Vector2(261.5, 5.5)
+scale = Vector2(4.11719, 0.148438)
+texture = ExtResource("1_u6ku2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParedeBaixo"]
+position = Vector2(261.5, 6)
+shape = SubResource("RectangleShape2D_u85o4")
+
+[node name="Info" type="Label" parent="."]
+offset_left = 661.0
+offset_top = 44.0
+offset_right = 732.0
+offset_bottom = 67.0
+text = "Hi-Score:
+Score:
+Boomerangs:"
+
+[node name="Hi-Score" type="Label" parent="."]
+offset_left = 1023.0
+offset_top = 45.0
+offset_right = 1142.0
+offset_bottom = 68.0
+text = "0000000000000"
+
+[node name="Score" type="Label" parent="."]
+offset_left = 1022.0
+offset_top = 72.0
+offset_right = 1141.0
+offset_bottom = 95.0
+text = "0000000000000"
