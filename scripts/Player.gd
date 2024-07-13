@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
+const SPEED = 300.0;
+var bummerangues = 5;
 var arma_player = preload("res://cenas/arma_player.tscn"); 
 var arma_especial = preload("res://cenas/arma_especial.tscn");
 @onready var Tiro_pos = $Tiro_pos;
@@ -14,12 +15,16 @@ func _physics_process(delta):
 	else: velocity.y = move_toward(velocity.y, 0, SPEED)
 	move_and_slide()
 	
-	if Input.is_action_just_pressed("shoot"): atirar("normal");
-	if Input.is_action_just_pressed("especial"): atirar("especial");
+	if Input.is_action_just_pressed("shoot") : 
+		atirar("normal");
+		
+	if Input.is_action_just_pressed("especial") && bummerangues > 0 : 
+		atirar("especial");
+		bummerangues -= 1;
 
 func atirar(type):
 	var bala = null; 
 	if type == "normal": bala = arma_player.instantiate();
 	else: bala = arma_especial.instantiate();
-	add_child(bala);
+	get_parent().get_parent().add_child(bala);
 	bala.global_position = Tiro_pos.global_position;

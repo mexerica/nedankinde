@@ -87,3 +87,10 @@ offset_top = 72.0
 offset_right = 1141.0
 offset_bottom = 95.0
 text = "0000000000000"
+
+[node name="Bumerangue" type="Label" parent="."]
+offset_left = 1132.0
+offset_top = 92.0
+offset_right = 1167.0
+offset_bottom = 115.0
+text = "5"

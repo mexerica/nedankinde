@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsyi2a821tgq5"]
+
+[ext_resource type="Texture2D" uid="uid://4skckwvx08vb" path="res://img/arma_agulha.png" id="1_6sjtx"]
+[ext_resource type="Script" path="res://scripts/arma_mae.gd" id="1_ns4r7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eg3wk"]
+size = Vector2(24, 125.5)
+
+[node name="arma_mae" type="Area2D"]
+script = ExtResource("1_ns4r7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_6sjtx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 0.25)
+shape = SubResource("RectangleShape2D_eg3wk")
